@@ -46,7 +46,8 @@ legislative committee.
 | Fax-failure-rate / NCPS template process | current | MassAbility (local) + SSA (national) | L1 + L4 |
 | Case-processing system outages / helpdesk tickets | current | MassAbility (MA PRA) | L1 |
 | CE no-show & vendor turnaround; MER overdue counts; notice-mailing delays | current | MassAbility (MA PRA) | L1 |
-| COVID telework / remote-access start directive and Remote Access Survey | March 2020-present | MassAbility (MA PRA) | L1 |
+| COVID telework / remote-access start directive, five-day virtual status, three-day transition, and Remote Access Survey | March 2020-present | MassAbility (MA PRA) | L1 |
+| DDS-specific or DDS-inclusive staff climate/culture survey report, vendor, instrument, aggregate results, and action plan | 2017-2020 | MassAbility (MA PRA) | L1 |
 | Weekly case-cap directives + case-weight methodology + productivity memos | 2024–present | MassAbility (MA PRA) | L1 |
 | Per-examiner aged-case inventory; OT authorization memos | current | MassAbility (MA PRA) | L1 |
 | Vacancy / time-to-fill / separations-with-reason; trainee pipeline; grievance & RA aggregates; Form 30s | all | MassAbility (MA PRA) | L1 |
@@ -66,7 +67,8 @@ legislative committee.
 - Cases-per-examiner productivity and annual attrition / vacancy counts
 - Annual overtime authorizations & expenditures (we hold only a 2-week 2023 CTHRU snapshot + internal memos)
 - CE-vendor contract spend (who MA DDS pays for consultative exams, and how much)
-- COVID telework start directive / Remote Access Survey materials
+- COVID telework start directive / Remote Access Survey materials, including whether initial virtual work was five days per week and when it changed to a three-day schedule
+- DDS-specific or DDS-inclusive climate/culture/staff survey report, including any outside-firm survey one or two years before COVID-19
 - The mandatory-overtime / 18-vs-20-case assignment directives
 
 ## Operational / accountability angles (the "fax-like" set)

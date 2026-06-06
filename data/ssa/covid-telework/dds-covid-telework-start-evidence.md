@@ -5,8 +5,11 @@
 Public sources support a DDS-specific work-from-home start window of March
 17-27, 2020. Massachusetts/MRC executive-branch telework began in the same
 mid-March emergency period, but no public Massachusetts DDS-specific directive
-with an exact start date was located. The remaining MassAbility PRR should
-request the exact directive and remote-access records.
+with an exact start date was located. Public sources also do not answer whether
+the initial DDS virtual-work posture was five days per week, when it changed to
+a three-day schedule, or whether the reported last-week-of-January transition
+date is correct. The remaining MassAbility PRR should request the exact
+directive, remote-access records, and schedule-change records.
 
 ## Evidence chain
 
@@ -24,6 +27,11 @@ request the exact directive and remote-access records.
 - DDS-specific remote-work start: March 17-27, 2020, based on SSA's local
   office closure and the DDS VPN deployment within ten days.
 - Exact Massachusetts DDS start date remains a records-request target.
+- Whether the initial DDS virtual-work arrangement was full-time / five days per
+  week remains a records-request target.
+- The exact date and year of the later transition to a three-day schedule remain
+  records-request targets. Working note from user context: last week of January,
+  to be confirmed or corrected by MassAbility records.
 
 ## PRR target
 
@@ -31,7 +39,9 @@ Request records sufficient to show the exact date MassAbility/MRC DDS employees
 were first directed, authorized, or required to work from home/telework due to
 COVID-19, including March 2020 emails, memoranda, directives, remote-access/VPN
 rollout notices, equipment pickup instructions, Remote Access Survey materials,
-and return-to-office plans.
+staffing/coverage schedules, hybrid-work directives, return-to-office plans, and
+records showing whether the initial arrangement was five days per week and when
+it changed to a three-day schedule.
 
 ## Sources
 

@@ -2,10 +2,10 @@
   "$schema": "../../../schemas/dataset.meta.schema.json",
   "id": "ssa/covid-telework/dds-covid-telework-start-evidence",
   "title": "DDS COVID Telework Start Evidence (March 2020)",
-  "description": "Computed evidence packet tracing when Massachusetts DDS likely began work-from-home/telework during the COVID-19 pandemic. Synthesizes SSA's March 2020 public-office closure, SSA testimony that state DDS VPN work-from-home access was established within ten days, SSA OIG's pandemic DDS processing report, and MRC SRC minutes referencing COVID-19 telework assignments and a Remote Access Survey. Concludes that the public record supports a DDS-specific March 17-27, 2020 start window while the exact Massachusetts DDS directive remains a MassAbility PRR target.",
+  "description": "Computed evidence packet tracing when Massachusetts DDS likely began work-from-home/telework during the COVID-19 pandemic. Synthesizes SSA's March 2020 public-office closure, SSA testimony that state DDS VPN work-from-home access was established within ten days, SSA OIG's pandemic DDS processing report, and MRC SRC minutes referencing COVID-19 telework assignments and a Remote Access Survey. Concludes that the public record supports a DDS-specific March 17-27, 2020 start window while the exact Massachusetts DDS directive, whether the initial virtual-work posture was five days per week, and the later transition to a three-day schedule remain MassAbility PRR targets.",
   "path": "data/ssa/covid-telework/dds-covid-telework-start-evidence.md",
   "format": "md",
-  "temporal_coverage": { "start": "2020-03", "end": "2020-09" },
+  "temporal_coverage": { "start": "2020-03", "end": "2026-01" },
   "geographic_coverage": "Massachusetts DDS focus; SSA national/DDS context; MRC/MassAbility context",
   "source": {
     "publisher": "U.S. Social Security Administration and SSA Office of the Inspector General",
@@ -14,8 +14,8 @@
     "retrieved_at": "2026-06-06"
   },
   "confidence_tier": "Computed",
-  "update_cadence": "As needed; revise if MassAbility PRR returns a precise Massachusetts DDS telework directive or start date.",
-  "notes": "Computed because this packet synthesizes multiple official sources and separates public evidence from inference. It does not claim a single public Massachusetts DDS directive date; the exact date remains a MassAbility records-request target.",
+  "update_cadence": "As needed; revise if MassAbility PRR returns a precise Massachusetts DDS telework directive, start date, five-day virtual-work confirmation, or three-day schedule transition date.",
+  "notes": "Computed because this packet synthesizes multiple official sources and separates public evidence from inference. It does not claim a single public Massachusetts DDS directive date or a verified schedule-change date; the exact dates and cadence remain MassAbility records-request targets. User context records a working note that DDS transitioned to a three-day schedule during the last week of January, to be confirmed or corrected by records.",
   "derived_from": [
     "https://www.ssa.gov/news/en/press/releases/2020-03-16.html",
     "https://www.ssa.gov/legislation/testimony_042921.html",
@@ -27,5 +27,5 @@
     "prr-templates/ssa-foia-ma-dds",
     "ssa/oig-audit-staffing-productivity-072309"
   ],
-  "tags": ["computed", "covid-19", "dds", "massability", "massachusetts", "mrc", "remote-access", "ssa", "ssa-oig", "telework", "work-from-home", "prr-target"]
+  "tags": ["computed", "covid-19", "dds", "five-day-virtual", "hybrid-work", "massability", "massachusetts", "mrc", "remote-access", "ssa", "ssa-oig", "telework", "three-day-schedule", "work-from-home", "prr-target"]
 }
