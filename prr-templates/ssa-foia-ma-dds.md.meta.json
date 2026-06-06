@@ -1,0 +1,32 @@
+{
+  "$schema": "../schemas/dataset.meta.schema.json",
+  "id": "prr-templates/ssa-foia-ma-dds",
+  "title": "Federal FOIA Request — SSA, Massachusetts DDS Records (Sharpened)",
+  "description": "Ready-to-file Freedom of Information Act (5 U.S.C. § 552) request to SSA, focused on the Massachusetts DDS records a state PRR cannot reach. Section 1 requests the SSA/ODD annual budget AUTHORIZATION/spending-authority issued to MA DDS (the per-state allocation not published in SSA's Congressional Justification) plus the SSA-4513 reimbursement actually paid, FY2013-2024. Section 2 requests State Agency Operations Report (SAOR) workload & staffing for all states FY2019-2024 (to benchmark MA). Section 3 requests the count of MA cases the SSA regional QA component returned for correction, by deficiency type. Section 4 requests SSA Boston Regional Office (Region I) performance-feedback letters and any performance-improvement-plan/corrective-action notices to MA DDS. Section 5 requests national-systems records (incoming-fax failure rate + NCPS template-edit process; DCPS rollout/downtime as it affected MA). Section 6 requests OIG audit 072309 and successors. Includes a §552(a)(4)(A)(iii) public-interest fee waiver and non-commercial requester category. Written in an individual capacity; never from an @ssa.gov address. Supersedes prr-templates/ssa-foia.",
+  "path": "prr-templates/ssa-foia-ma-dds.md",
+  "format": "md",
+  "geographic_coverage": "United States (all state DDS for SAOR benchmarking); Massachusetts DDS focus; SSA ODD + Boston Region I",
+  "temporal_coverage": { "start": "2013", "end": "2024" },
+  "source": {
+    "publisher": "U.S. Social Security Administration — Office of Privacy and Disclosure, FOIA (request target)",
+    "title": "SSA FOIA — Freedom of Information Act (5 U.S.C. § 552)",
+    "url": "https://securefoia.ssa.gov"
+  },
+  "confidence_tier": "Authoritative",
+  "request_status": {
+    "status": "Submitted",
+    "submitted_at": "2026-06-06",
+    "submission_channel": "SSA FOIA Public Access Link (PAL)",
+    "tracking_note": "Marked submitted per user instruction; confirmation/control number not recorded in repo."
+  },
+  "update_cadence": "As needed (revise FY ranges and audit numbers before each filing).",
+  "notes": "Confidence tier = Authoritative because this file IS the canonical, repo-maintained FOIA request template/form. Use this rather than a MA state PRR for the cells docs/methodology.md flags 'structurally unavailable' — the SSA/ODD per-state DDS budget ALLOCATION is not published at state level and is unreachable via Chapter 66. Supersedes the older prr-templates/ssa-foia (which had a deliberately broken sentinel email address); this version points to the official SSA FOIA portal, FOIA liaison email, and Baltimore mailing address. Requester contact fields are filled for Wardis Vizcaino using a personal, non-@ssa.gov email address. References OIG audit 072309 (carded as ssa/oig-audit-staffing-productivity-072309).",
+  "related": [
+    "prr-templates/massability-dds-prr",
+    "dds-statistics-master-table",
+    "ssa/oig-audit-staffing-productivity-072309",
+    "ssa/ssa-sa-fywl-all-states-2001-2024",
+    "ssa/budget/cj-fy25-extracted"
+  ],
+  "tags": ["authoritative", "budget-allocation", "dds", "federal", "foia", "massachusetts", "odd", "prr-template", "qa-returns", "request-template", "saor", "ssa", "staffing", "structurally-unavailable", "workload"]
+}

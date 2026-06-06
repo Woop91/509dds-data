@@ -88,8 +88,8 @@ Per-state DDS budget allocations, SAOR data 2019–2024 by state, all-state VDE 
 | Priority | Task | Tool | Est. credit | Status |
 |---|---|---|---|---|
 | Highest | CTHRU pull dropping VDE-only filter (resolves §1 mgr-pay + §2 entirely) | Direct Socrata API query (no Firecrawl) | 0 | ✅ DONE 2026-05-08 — see `data/pay-scales/_build_mgr_pay.py`, `mgr-annual-salary-by-employee.csv`, `mgr-incumbent-timeline-dds-det.json`. Identified Patricia Roda as Asst Comm DDS 2015-2021 (silent transition), Adelaide Osborne as interim MRC Commissioner 2015-2017. Aja James full 2010-2023 pay timeline derived. |
-| Highest | Submit existing `prr-templates/massability-prr.md` (resolves most of §3) | Email | 0 | Pending user submission |
-| Highest | Submit existing `prr-templates/ssa-foia.md` (resolves most of §4c) | Email | 0 | Pending user submission |
+| Highest | Submit consolidated `prr-templates/massability-dds-prr.md` (resolves most of §3) | mass.gov form | 0 | Pending user submission |
+| Highest | Submit sharpened `prr-templates/ssa-foia-ma-dds.md` (resolves most of §4c) | SSA FOIA PAL | 0 | Submitted 2026-06-06; confirmation/control number not recorded in repo |
 | High | SSA `.xlsx` + BLS `.zip` manual save (per `MANUAL-FETCH-NEEDED.md`) | User browser | 0 | Pending user manual save |
 | High | Read GAO **full PDFs** at `gao.gov/assets/{id}.pdf` for body content beyond the summaries already captured | Firecrawl scrape | ~4 cred | Not started |
 | Medium | Wayback Machine snapshots of `mass.gov/orgs/mrc/about` for 2015/2017/2019 to fill the Kinney→[?]→James gap | Firecrawl scrape on web.archive.org URLs | ~6 cred | ✅ MOOTED — gap closed via CTHRU pull (Patricia Roda identified) |
