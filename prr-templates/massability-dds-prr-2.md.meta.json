@@ -1,0 +1,24 @@
+{
+  "$schema": "../schemas/dataset.meta.schema.json",
+  "id": "prr-templates/massability-dds-prr-2",
+  "title": "Massachusetts Public Records Request — MassAbility DDS Companion PRR for Operational Metrics, Workload, Overtime, and Special Populations",
+  "description": "Ready-to-file Massachusetts Public Records Law (M.G.L. c. 66, § 10) companion request to MassAbility (formerly MRC) for the DDS division's operational metrics, two specific reconciliations, workload/caseload assignment records, overtime records, and additional special-population breakouts. Contains the asks formerly listed as Sections 2, 3, 6, 7, and 9 of the consolidated MassAbility DDS PRR, split into a second request so the primary MassAbility PRR remains shorter and easier to process.",
+  "path": "prr-templates/massability-dds-prr-2.md",
+  "format": "md",
+  "geographic_coverage": "Massachusetts (DDS division of MassAbility / former MRC; Boston and Worcester offices)",
+  "temporal_coverage": { "start": "2010", "end": "2025" },
+  "source": {
+    "publisher": "MassAbility (formerly Massachusetts Rehabilitation Commission) — Records Access Officer (request target)",
+    "title": "Massachusetts Public Records Request — M.G.L. c. 66, § 10",
+    "url": "https://www.mass.gov/forms/submit-a-massability-public-records-request"
+  },
+  "confidence_tier": "Authoritative",
+  "update_cadence": "As needed (revise FY ranges, requester name, and metric list before each filing).",
+  "notes": "Confidence tier = Authoritative because this file IS a canonical, repo-maintained state public-records request template, not a derived data observation. Split from prr-templates/massability-dds-prr on 2026-06-06 at user direction because the consolidated request had too many questions for a single PRR. Requester contact fields are filled for Wardis Vizcaino using a personal, non-@ssa.gov email address.",
+  "related": [
+    "prr-templates/massability-dds-prr",
+    "dds-statistics-master-table",
+    "workload/dds-boston-overtime-and-18-case-weeks"
+  ],
+  "tags": ["authoritative", "chapter-66", "dds", "homeless-cases", "massability", "massachusetts", "mrc", "operational-metrics", "overtime", "prr-template", "public-record", "request-template", "section-9f", "special-populations", "workload"]
+}
