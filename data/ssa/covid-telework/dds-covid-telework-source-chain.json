@@ -1,0 +1,102 @@
+{
+  "topic": "MassAbility/MRC DDS COVID telework and climate-survey source chain",
+  "assembled_at": "2026-06-06",
+  "records": [
+    {
+      "record_id": "ssa-press-2020-03-16",
+      "title": "SSA press release: local offices phone service beginning March 17, 2020",
+      "record_type": "press_release_html",
+      "publisher": "Social Security Administration",
+      "public_url": "https://www.ssa.gov/news/en/press/releases/2020-03-16.html",
+      "local_path": null,
+      "capture_status": "public_url_confirmed; direct_powershell_download_blocked_by_ssa_akamai_access_denied",
+      "supports": ["ssa_office_remote_service_anchor", "dds_remote_start_window_start_anchor"]
+    },
+    {
+      "record_id": "ssa-testimony-2021-04-29",
+      "title": "SSA testimony of Grace Kim before Senate Finance Committee on service delivery",
+      "record_type": "testimony_html",
+      "publisher": "Social Security Administration",
+      "public_url": "https://www.ssa.gov/legislation/testimony_042921.html",
+      "local_path": null,
+      "capture_status": "public_url_confirmed; direct_powershell_download_blocked_by_ssa_akamai_access_denied",
+      "supports": ["ssa_work_from_home_march_2020", "dds_vpn_within_ten_days", "dds_remote_start_window_end_anchor"]
+    },
+    {
+      "record_id": "ssa-oig-a-01-20-50963",
+      "title": "SSA OIG report A-01-20-50963 on COVID-19 pandemic effect on DDS processing",
+      "record_type": "audit_report_pdf",
+      "publisher": "Social Security Administration Office of the Inspector General",
+      "public_url": "https://oig.ssa.gov/assets/uploads/a-01-20-50963.pdf",
+      "local_path": "data/ssa/covid-telework/sources/ssa-oig-a-01-20-50963-covid-dds-processing.source.pdf",
+      "capture_status": "stored_full_pdf",
+      "bytes": 1269332,
+      "sha256": "93A2C5D0BD1DEADF032353316432E8EE4D6127C21CBC038D4048D15FFBEE28DD",
+      "supports": ["dds_remote_equipment_transfer", "dds_telework_context"]
+    },
+    {
+      "record_id": "mrc-src-2020-09-10",
+      "title": "MRC SRC Needs Assessment Committee September 10, 2020 minutes",
+      "record_type": "meeting_minutes_pdf",
+      "publisher": "Massachusetts Rehabilitation Commission State Rehabilitation Council",
+      "public_url": "https://www.mass.gov/doc/src-needs-assessment-committee-september-minutes/download",
+      "local_path": null,
+      "capture_status": "public_url_confirmed; direct_powershell_download_blocked_by_mass_gov_403",
+      "supports": ["mrc_remote_access_survey", "mrc_covid_telework_assignments"]
+    },
+    {
+      "record_id": "ma-lgbtq-youth-fy2018",
+      "title": "Massachusetts Commission on LGBTQ Youth FY2018 Annual Policy Recommendations",
+      "record_type": "policy_recommendations_pdf",
+      "publisher": "Massachusetts Commission on LGBTQ Youth",
+      "public_url": "https://archives.lib.state.ma.us/server/api/core/bitstreams/af3b1007-f43f-43b3-a1e7-542688fda0da/content",
+      "local_path": "data/ssa/covid-telework/sources/ma-lgbtq-youth-fy2018-policy-recommendations.source.pdf",
+      "capture_status": "stored_full_pdf",
+      "bytes": 890320,
+      "sha256": "3FF275DD96E6A03AD06452E28D5FA5AD466A87245B5F80AF46A1E1226FDDCBCA",
+      "supports": ["mrc_internal_staff_climate_survey_lgbtq_breadcrumb"]
+    },
+    {
+      "record_id": "massability-prr-template",
+      "title": "MassAbility DDS consolidated public records request",
+      "record_type": "prr_template_markdown",
+      "publisher": "509dds-data repository",
+      "public_url": "prr-templates/massability-dds-prr.md",
+      "local_path": "prr-templates/massability-dds-prr.md",
+      "capture_status": "stored_prr_template",
+      "supports": ["unresolved_exact_start_date", "unresolved_five_day_virtual_status", "unresolved_three_day_transition", "unresolved_dds_climate_survey_report"]
+    }
+  ],
+  "data_points": [
+    {
+      "data_point_id": "dds_remote_start_window",
+      "statement": "Public sources support a Massachusetts DDS remote-work start window of March 17-27, 2020, not an exact Massachusetts DDS directive date.",
+      "supporting_record_ids": ["ssa-press-2020-03-16", "ssa-testimony-2021-04-29", "ssa-oig-a-01-20-50963"],
+      "status": "computed_public_evidence_window"
+    },
+    {
+      "data_point_id": "initial_five_day_virtual_status",
+      "statement": "Whether initial DDS virtual work was full-time/five days per week is not answered by the public source chain.",
+      "supporting_record_ids": ["massability-prr-template"],
+      "status": "prr_target"
+    },
+    {
+      "data_point_id": "three_day_transition",
+      "statement": "The date and year of the transition to a three-day schedule are not answered by the public source chain; user context records a working note of the last week of January.",
+      "supporting_record_ids": ["massability-prr-template"],
+      "status": "prr_target"
+    },
+    {
+      "data_point_id": "mrc_remote_access_survey",
+      "statement": "MRC was tracking COVID telework assignments and a Remote Access Survey by September 10, 2020, but this does not establish DDS start date or schedule cadence.",
+      "supporting_record_ids": ["mrc-src-2020-09-10", "massability-prr-template"],
+      "status": "public_breadcrumb_plus_prr_target"
+    },
+    {
+      "data_point_id": "mrc_staff_climate_survey",
+      "statement": "A public FY2018 Massachusetts Commission on LGBTQ Youth report states that MRC conducted an internal staff climate survey related to LGBTQ issues; no public DDS-specific or outside-firm DDS climate-survey report was located.",
+      "supporting_record_ids": ["ma-lgbtq-youth-fy2018", "massability-prr-template"],
+      "status": "public_breadcrumb_plus_prr_target"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../schemas/dataset.meta.schema.json",
+  "id": "ssa/covid-telework/dds-covid-telework-source-chain-manifest",
+  "title": "DDS COVID Telework Source-Record Manifest",
+  "description": "Machine-readable manifest for the DDS COVID telework and climate-survey source chain. Lists public records, local source artifact paths where successfully stored, SHA-256 hashes for stored PDFs, download-block status for inaccessible publisher pages, and which data points each record supports.",
+  "path": "data/ssa/covid-telework/dds-covid-telework-source-chain.json",
+  "format": "json",
+  "temporal_coverage": { "start": "2017", "end": "2026" },
+  "geographic_coverage": "Massachusetts DDS focus; SSA national/DDS context; MRC/MassAbility context",
+  "source": {
+    "publisher": "509dds-data repository",
+    "title": "Source-record manifest assembled from public URLs, downloaded PDFs, and MassAbility PRR targets",
+    "url": "data/ssa/covid-telework/dds-covid-telework-source-chain.json",
+    "retrieved_at": "2026-06-06"
+  },
+  "confidence_tier": "Computed",
+  "update_cadence": "As needed; update when blocked public records are browser-saved or MassAbility produces responsive records.",
+  "notes": "This manifest is a provenance/control artifact, not an original government record. It records full local PDF captures for two source records and explicit blocked-download status for three public records that still need browser-save/manual capture if full local copies are required.",
+  "derived_from": [
+    "data/ssa/covid-telework/sources/ssa-oig-a-01-20-50963-covid-dds-processing.source.pdf",
+    "data/ssa/covid-telework/sources/ma-lgbtq-youth-fy2018-policy-recommendations.source.pdf",
+    "https://www.ssa.gov/news/en/press/releases/2020-03-16.html",
+    "https://www.ssa.gov/legislation/testimony_042921.html",
+    "https://www.mass.gov/doc/src-needs-assessment-committee-september-minutes/download",
+    "prr-templates/massability-dds-prr"
+  ],
+  "related": [
+    "ssa/covid-telework/dds-covid-telework-source-chain",
+    "ssa/covid-telework/dds-covid-telework-start-evidence",
+    "prr-templates/massability-dds-prr"
+  ],
+  "tags": ["computed", "covid-19", "dds", "manifest", "provenance", "source-records", "telework", "work-from-home"]
+}

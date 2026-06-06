@@ -17,11 +17,13 @@
   "notes": "Confidence tier = Authoritative because this file IS the canonical, repo-maintained state public-records request template — the authoritative artifact for the request workflow, not a derived data observation. It is a parameterized request carrying no fetched dataset values; requester contact fields are filled for Wardis Vizcaino using a personal, non-@ssa.gov email address. Consolidates and supersedes the older prr-templates/massability-prr (two-letter split merged into one per user decision 2026-06-03). Does NOT reach the SSA/ODD per-state DDS budget ALLOCATION cells docs/methodology.md flags 'structurally unavailable' — those require the federal FOIA in prr-templates/ssa-foia-ma-dds. Reasoning recorded in docs/records-request-gap-analysis.md.",
   "related": [
     "ssa/covid-telework/dds-covid-telework-start-evidence",
+    "ssa/covid-telework/dds-covid-telework-source-chain",
+    "ssa/covid-telework/dds-covid-telework-source-chain-manifest",
     "prr-templates/ssa-foia-ma-dds",
     "prr-templates/ma-comptroller-payroll-prr",
     "prr-templates/ma-hrd-classification-prr",
     "dds-statistics-master-table",
     "workload/dds-boston-overtime-and-18-case-weeks"
   ],
-  "tags": ["authoritative", "budget", "chapter-66", "climate-survey", "covid-19", "dds", "hybrid-work", "homeless-cases", "massability", "massachusetts", "mrc", "operational-defects", "overtime", "prr-template", "public-record", "remote-access", "request-template", "section-9f", "staff-survey", "telework", "three-day-schedule", "work-from-home", "workforce", "workload"]
+  "tags": ["authoritative", "budget", "chapter-66", "climate-survey", "covid-19", "dds", "evidence-chain", "hybrid-work", "homeless-cases", "massability", "massachusetts", "mrc", "operational-defects", "overtime", "provenance", "prr-template", "public-record", "remote-access", "request-template", "section-9f", "source-records", "staff-survey", "telework", "three-day-schedule", "work-from-home", "workforce", "workload"]
 }

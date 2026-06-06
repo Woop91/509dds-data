@@ -17,15 +17,21 @@
   "update_cadence": "As needed; revise if MassAbility PRR returns a precise Massachusetts DDS telework directive, start date, five-day virtual-work confirmation, or three-day schedule transition date.",
   "notes": "Computed because this packet synthesizes multiple official sources and separates public evidence from inference. It does not claim a single public Massachusetts DDS directive date or a verified schedule-change date; the exact dates and cadence remain MassAbility records-request targets. User context records a working note that DDS transitioned to a three-day schedule during the last week of January, to be confirmed or corrected by records.",
   "derived_from": [
+    "data/ssa/covid-telework/dds-covid-telework-source-chain.md",
+    "data/ssa/covid-telework/dds-covid-telework-source-chain.json",
+    "data/ssa/covid-telework/sources/ssa-oig-a-01-20-50963-covid-dds-processing.source.pdf",
+    "data/ssa/covid-telework/sources/ma-lgbtq-youth-fy2018-policy-recommendations.source.pdf",
     "https://www.ssa.gov/news/en/press/releases/2020-03-16.html",
     "https://www.ssa.gov/legislation/testimony_042921.html",
     "https://oig.ssa.gov/assets/uploads/a-01-20-50963.pdf",
     "https://www.mass.gov/doc/src-needs-assessment-committee-september-minutes/download"
   ],
   "related": [
+    "ssa/covid-telework/dds-covid-telework-source-chain",
+    "ssa/covid-telework/dds-covid-telework-source-chain-manifest",
     "prr-templates/massability-dds-prr",
     "prr-templates/ssa-foia-ma-dds",
     "ssa/oig-audit-staffing-productivity-072309"
   ],
-  "tags": ["computed", "covid-19", "dds", "five-day-virtual", "hybrid-work", "massability", "massachusetts", "mrc", "remote-access", "ssa", "ssa-oig", "telework", "three-day-schedule", "work-from-home", "prr-target"]
+  "tags": ["computed", "covid-19", "dds", "evidence-chain", "five-day-virtual", "hybrid-work", "massability", "massachusetts", "mrc", "provenance", "remote-access", "source-records", "ssa", "ssa-oig", "telework", "three-day-schedule", "work-from-home", "prr-target"]
 }

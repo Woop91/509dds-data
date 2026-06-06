@@ -43,6 +43,22 @@ staffing/coverage schedules, hybrid-work directives, return-to-office plans, and
 records showing whether the initial arrangement was five days per week and when
 it changed to a three-day schedule.
 
+## Stored chain
+
+- Human-readable provenance chain:
+  `data/ssa/covid-telework/dds-covid-telework-source-chain.md`
+- Machine-readable source-record manifest:
+  `data/ssa/covid-telework/dds-covid-telework-source-chain.json`
+- Stored SSA OIG PDF:
+  `data/ssa/covid-telework/sources/ssa-oig-a-01-20-50963-covid-dds-processing.source.pdf`
+- Stored Massachusetts Commission on LGBTQ Youth FY2018 PDF:
+  `data/ssa/covid-telework/sources/ma-lgbtq-youth-fy2018-policy-recommendations.source.pdf`
+
+Direct local download attempts for the SSA press release, SSA testimony, and
+MRC SRC September 10, 2020 minutes were blocked by publisher access controls;
+the public URLs remain in the source chain and should be browser-saved or
+replaced by PRR-produced records.
+
 ## Sources
 
 - Social Security Administration, "Social Security Offices Will Only Offer
