@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MA DDS-Det vs population peers — 10-year accuracy & staffing</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --ink-soft: #555;
+    --bg: #fafaf7;
+    --card: #ffffff;
+    --rule: #e8e4d8;
+    --ma: #b91c1c;
+    --peer: #999;
+    --link: #1d4ed8;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: 'Public Sans', -apple-system, system-ui, sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.5;
+  }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 1rem; margin-bottom: 1.5rem; }
+  header h1 {
+    font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.3rem;
+  }
+  header .sub { color: var(--ink-soft); font-size: 1rem; max-width: 80ch; }
+  header .meta { color: var(--ink-soft); font-size: 0.8rem; margin-top: 0.5rem; }
+  header .meta a { color: var(--link); }
+
+  .punchline {
+    background: #1a1a1a; color: #f5e9d0; padding: 1.5rem 1.25rem;
+    margin-bottom: 1.5rem; border-left: 6px solid var(--ma);
+  }
+  .punchline .lead {
+    font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+    font-size: clamp(1.5rem, 3.5vw, 2.4rem); line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .punchline .lead em { font-style: normal; color: #fcd34d; }
+  .punchline .body { font-size: 0.95rem; opacity: 0.9; max-width: 80ch; }
+
+  .chart-card {
+    background: var(--card); border: 1px solid var(--rule);
+    padding: 1rem 1rem 0.75rem; margin-bottom: 1.5rem;
+  }
+  .chart-card h2 {
+    font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase;
+    font-weight: 700; font-size: 1.15rem; margin: 0 0 0.15rem;
+    letter-spacing: 0.01em;
+  }
+  .chart-card .blurb { color: var(--ink-soft); font-size: 0.85rem; margin-bottom: 0.85rem; max-width: 85ch; }
+  .chart-card .canvas-wrap { position: relative; height: 460px; }
+  .chart-card .src { color: var(--ink-soft); font-size: 0.7rem; margin-top: 0.6rem; padding-top: 0.5rem; border-top: 1px dashed var(--rule); }
+
+  .legend-strip {
+    display: flex; flex-wrap: wrap; gap: 0.85rem; font-size: 0.82rem;
+    margin: 0.4rem 0 0.6rem;
+  }
+  .legend-strip span { display: inline-flex; align-items: center; gap: 0.4rem; }
+  .legend-strip i {
+    display: inline-block; width: 14px; height: 4px; border-radius: 2px;
+  }
+  .legend-strip .ma-tag i { height: 5px; background: var(--ma); }
+
+  footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--ink-soft); font-size: 0.8rem; }
+
+  @media (max-width: 600px) {
+    .chart-card .canvas-wrap { height: 380px; }
+    .punchline .lead { font-size: 1.4rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>MA vs peers — 10-year accuracy &amp; staffing</h1>
+  <div class="sub">Massachusetts DDS-Det compared to the eight population-peer states (TN, AZ, IN, MD, VA, WA, MO, WI). Accuracy: FY2013–FY2022 (latest SSA open-data year). Staffing: FY2014–FY2023.</div>
+  <div class="meta">
+    Sources: SSA <code>DDS-Net-Accuracy.csv</code> (federal QA review), SSA DDS Employees by State FY2010–2023 (FOIA reading room) ·
+    Repo: <a href="https://github.com/Woop91/509dds-data">github.com/Woop91/509dds-data</a> ·
+    Generated 2026-05-08
+  </div>
+</header>
+
+<div class="punchline">
+  <div class="lead">MA: <em>−24% staff</em> over 10 years · steepest drop in the peer set · accuracy <em>−1.3 pts</em></div>
+  <div class="body">
+    Of the nine population-peer states (6–8M residents), only Massachusetts combines a steep staffing decline (−24.3% from 371 in 2014 to 281 in 2023) with a 10-year accuracy slip. Arizona and Virginia added staff (+13% and rebound to 427); MA never recovered. Accuracy held above the federal 90.6%/95% bar throughout — but MA peaked at 98.2% in 2016 and has stayed below 96.5% every year since 2019.
+  </div>
+</div>
+
+<div class="chart-card">
+  <h2>Net accuracy rate · FY2013–FY2022</h2>
+  <div class="blurb">
+    Federal Quality Review accuracy. MA highlighted in red; eight peer states in muted gray for comparison band. The federal accuracy floor (90.6% through FY2022, raised to 95% in FY2023) is shown as a dashed reference line. <strong>What to see:</strong> the peer band is tight (~95–99%); MA tracks the lower edge of that band from 2017 onward.
+  </div>
+  <div class="legend-strip">
+    <span class="ma-tag"><i></i><strong>Massachusetts</strong></span>
+    <span><i style="background:#999"></i>Peer states (TN, AZ, IN, MD, VA, WA, MO, WI)</span>
+    <span><i style="background:#1d4ed8; height:2px; border-top:1px dashed #1d4ed8;"></i>Federal accuracy floor</span>
+  </div>
+  <div class="canvas-wrap"><canvas id="accuracyChart"></canvas></div>
+  <div class="src">
+    Source: <code>data/ssa/dds-net-accuracy-by-state-2007-2022.csv</code> (SSA federal Quality Review, all 50 states + DC + territories). FY2023+ not yet published in open data.
+  </div>
+</div>
+
+<div class="chart-card">
+  <h2>Total DDS employees · FY2014–FY2023</h2>
+  <div class="blurb">
+    Total DDS division headcount per state, from SSA's annual FOIA-released employee count. MA in red; peers in distinct colors so the divergence is visible. <strong>What to see:</strong> MA is the lowest line at the right edge despite starting in the middle of the pack. AZ, VA, and TN rebounded sharply in 2022–2023; MA continued to decline.
+  </div>
+  <div class="legend-strip" id="staffLegend"></div>
+  <div class="canvas-wrap"><canvas id="staffChart"></canvas></div>
+  <div class="src">
+    Source: <code>data/ssa/staffing/dds-employees-by-state-fy2010-2023.json</code> (extracted from SSA FY2010–2023 DDS employees-by-state spreadsheet, FOIA reading room).
+  </div>
+</div>
+
+<footer>
+  <strong>Disambiguation:</strong> "DDS" here means <em>Disability Determination Services</em> — the division of MassAbility (formerly MRC) that adjudicates SSDI/SSI claims for SSA. Not the Department of Developmental Services.<br>
+  Peer set rationale: states within ±1.5M of MA's ~7M population, per <code>docs/peer-states-comparison.json</code>. Companion charts: <a href="dds-25-year-chart.html">25-year MA dashboard</a> · <a href="staffing-vs-workload.html">staffing vs workload</a>
+</footer>
+
+</div>
+
+<script>
+const accuracyYears = [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022];
+const staffYears    = [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023];
+
+// Federal accuracy floor: 90.6% through FY2022, 95.0% from FY2023 (out of accuracy chart's range)
+const fedFloor = [90.6, 90.6, 90.6, 90.6, 90.6, 90.6, 90.6, 90.6, 90.6, 90.6];
+
+const accuracy = {
+  MA: [97.50, 98.10, 97.30, 98.20, 96.10, 96.90, 96.50, 95.90, 95.90, 96.20],
+  TN: [98.10, 95.70, 97.00, 97.60, 97.40, 97.50, 97.30, 98.10, 96.30, 96.90],
+  AZ: [97.50, 96.80, 98.20, 98.10, 97.40, 96.90, 97.10, 96.80, 94.60, 98.00],
+  IN: [97.90, 98.40, 99.10, 97.80, 98.20, 96.50, 95.90, 96.10, 95.20, 95.60],
+  MD: [99.40, 97.40, 96.80, 98.20, 98.70, 97.40, 99.00, 98.00, 98.00, 98.70],
+  VA: [97.90, 98.50, 97.80, 98.10, 97.20, 97.90, 98.00, 95.70, 97.50, 98.40],
+  WA: [98.10, 97.70, 97.70, 97.70, 97.40, 96.80, 96.50, 97.30, 98.30, 98.00],
+  MO: [98.90, 97.50, 98.40, 98.30, 97.30, 97.90, 98.40, 96.00, 96.30, 97.00],
+  WI: [98.20, 97.70, 97.10, 97.70, 98.70, 97.80, 97.80, 97.70, 96.40, 97.70]
+};
+
+const staff = {
+  MA: [371, 358, 364, 343, 328, 325, 307, 307, 284, 281],
+  TN: [493, 456, 461, 412, 377, 355, 380, 386, 363, 437],
+  AZ: [282, 266, 276, 267, 243, 249, 235, 268, 288, 319],
+  IN: [320, 281, 267, 243, 256, 266, 274, 287, 273, 284],
+  MD: [264, 255, 266, 245, 245, 240, 211, 198, 175, 232],
+  VA: [473, 425, 406, 363, 329, 331, 315, 383, 355, 427],
+  WA: [382, 357, 379, 371, 361, 340, 327, 351, 332, 354],
+  MO: [400, 386, 412, 387, 361, 400, 383, 387, 375, 382],
+  WI: [273, 255, 257, 226, 245, 228, 225, 217, 192, 219]
+};
+
+const peerOrder = ['TN','AZ','IN','MD','VA','WA','MO','WI'];
+const peerColors = {
+  TN: '#0891b2', AZ: '#c2410c', IN: '#7e22ce', MD: '#0f766e',
+  VA: '#a16207', WA: '#1d4ed8', MO: '#be185d', WI: '#15803d'
+};
+
+// === Accuracy chart: MA red + peer band gray ===
+const accuracyDatasets = [
+  ...peerOrder.map(p => ({
+    label: p,
+    data: accuracy[p],
+    borderColor: 'rgba(120,120,120,0.45)',
+    backgroundColor: 'rgba(120,120,120,0)',
+    borderWidth: 1.5, pointRadius: 0, tension: 0.2,
+    order: 2
+  })),
+  {
+    label: 'Federal floor (90.6%)',
+    data: fedFloor,
+    borderColor: '#1d4ed8',
+    borderWidth: 1.5, borderDash: [6,4], pointRadius: 0, tension: 0,
+    order: 3
+  },
+  {
+    label: 'Massachusetts',
+    data: accuracy.MA,
+    borderColor: '#b91c1c',
+    backgroundColor: 'rgba(185,28,28,0.08)',
+    borderWidth: 3.5, pointRadius: 4, pointBackgroundColor: '#b91c1c', tension: 0.2,
+    order: 1
+  }
+];
+
+new Chart(document.getElementById('accuracyChart'), {
+  type: 'line',
+  data: { labels: accuracyYears, datasets: accuracyDatasets },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    interaction: { mode: 'nearest', intersect: false },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y.toFixed(2)}%`
+        }
+      }
+    },
+    scales: {
+      x: { title: { display: true, text: 'Fiscal Year' } },
+      y: {
+        min: 89, max: 100,
+        title: { display: true, text: 'Net accuracy rate (%)' },
+        ticks: { callback: (v) => v + '%' }
+      }
+    }
+  }
+});
+
+// === Staffing chart: each peer in its own color ===
+const staffDatasets = [
+  ...peerOrder.map(p => ({
+    label: p,
+    data: staff[p],
+    borderColor: peerColors[p],
+    backgroundColor: 'transparent',
+    borderWidth: 1.8, pointRadius: 2, tension: 0.2,
+    order: 2
+  })),
+  {
+    label: 'Massachusetts',
+    data: staff.MA,
+    borderColor: '#b91c1c',
+    backgroundColor: 'rgba(185,28,28,0.08)',
+    borderWidth: 3.5, pointRadius: 4, pointBackgroundColor: '#b91c1c', tension: 0.2,
+    order: 1
+  }
+];
+
+new Chart(document.getElementById('staffChart'), {
+  type: 'line',
+  data: { labels: staffYears, datasets: staffDatasets },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    interaction: { mode: 'nearest', intersect: false },
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y} staff`
+        }
+      }
+    },
+    scales: {
+      x: { title: { display: true, text: 'Fiscal Year' } },
+      y: {
+        min: 150,
+        title: { display: true, text: 'Total DDS employees' }
+      }
+    }
+  }
+});
+
+// Build staffing legend dynamically (MA first, then peers)
+const legendEl = document.getElementById('staffLegend');
+const items = [
+  { label: 'Massachusetts', color: '#b91c1c', strong: true },
+  ...peerOrder.map(p => ({ label: p, color: peerColors[p] }))
+];
+legendEl.innerHTML = items.map(it =>
+  `<span><i style="background:${it.color}"></i>${it.strong ? '<strong>' + it.label + '</strong>' : it.label}</span>`
+).join('');
+</script>
+</body>
+</html>
