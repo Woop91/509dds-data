@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:42.443674+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\glade-constitution-and-bylaws\\glade-constitution-and-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "GLADE-Constitution-and-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\glade-constitution-and-bylaws\\glade-constitution-and-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "glade-constitution-and-bylaws",
+    "title": "GLADE Constitution and Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\glade-constitution-and-bylaws\\GLADE-Constitution-and-Bylaws.doc",
+    "bytes": 52224,
+    "filename": "GLADE-Constitution-and-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\GLADE-Constitution-and-Bylaws.doc",
+    "sha256": "566e8fbb31dcfdb8c53bb5bb8c07de0c30be4da21934e473e505aed6c24bf3a1"
+  }
+}

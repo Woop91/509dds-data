@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:11.992430+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\vermont-const-bylaws\\vermont-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Vermont-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\vermont-const-bylaws\\vermont-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "vermont-const-bylaws",
+    "title": "Vermont Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\vermont-const-bylaws\\Vermont-Const-Bylaws.doc",
+    "bytes": 40448,
+    "filename": "Vermont-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Vermont-Const-Bylaws.doc",
+    "sha256": "4f238b66657a0961f95a8898cee6f25be2739fd8ccf496887a69ab0c41cd2ece"
+  }
+}

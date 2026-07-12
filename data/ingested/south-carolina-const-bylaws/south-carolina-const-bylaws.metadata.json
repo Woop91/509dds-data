@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:10.164281+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\south-carolina-const-bylaws\\south-carolina-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "South-Carolina-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\south-carolina-const-bylaws\\south-carolina-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "south-carolina-const-bylaws",
+    "title": "South Carolina Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\south-carolina-const-bylaws\\South-Carolina-Const-Bylaws.doc",
+    "bytes": 128512,
+    "filename": "South-Carolina-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\South-Carolina-Const-Bylaws.doc",
+    "sha256": "cb6aa28a4ccfac40c45021563874ad1bd72da4eaadf054de69450e14b6109c78"
+  }
+}

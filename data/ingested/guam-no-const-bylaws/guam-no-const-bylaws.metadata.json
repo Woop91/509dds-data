@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:44.155868+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\guam-no-const-bylaws\\guam-no-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Guam-No-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\guam-no-const-bylaws\\guam-no-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "guam-no-const-bylaws",
+    "title": "Guam No Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\guam-no-const-bylaws\\Guam-No-Const-Bylaws.doc",
+    "bytes": 25600,
+    "filename": "Guam-No-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Guam-No-Const-Bylaws.doc",
+    "sha256": "10b94eb0f14a4cfc5d1bf6dd53e9df94cc777692c569fdb95e6db5b36c07ae5b"
+  }
+}

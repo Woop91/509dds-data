@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:01.713385+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\improving-ssa-disability-determination-process\\improving-ssa-disability-determination-process.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\improving-ssa-disability-determination-process\\improving-ssa-disability-determination-process.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "improving-ssa-disability-determination-process",
+    "title": "Improving ssa disability determination process"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\improving-ssa-disability-determination-process\\improving-ssa-disability-determination-process.pdf",
+    "bytes": 586952,
+    "filename": "improving-ssa-disability-determination-process.pdf",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\research\\urban\\improving-ssa-disability-determination-process.pdf",
+    "sha256": "28036f2af979e6862ac91111d63c60c98c9369a9fe2f037f18c564cf27876ebe"
+  }
+}

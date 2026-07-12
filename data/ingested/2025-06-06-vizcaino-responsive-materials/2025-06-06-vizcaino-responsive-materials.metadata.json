@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:06.767821+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\2025-06-06-vizcaino-responsive-materials\\2025-06-06-vizcaino-responsive-materials.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\2025-06-06-vizcaino-responsive-materials\\2025-06-06-vizcaino-responsive-materials.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "2025-06-06-vizcaino-responsive-materials",
+    "title": "2025 06 06 vizcaino responsive materials"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\2025-06-06-vizcaino-responsive-materials\\2025-06-06-vizcaino-responsive-materials.pdf",
+    "bytes": 220700,
+    "filename": "2025-06-06-vizcaino-responsive-materials.pdf",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\prr-responses\\2025-06-06-vizcaino-responsive-materials.pdf",
+    "sha256": "6b118520d60d353f22d67f934d6e9bb10e1e27bc207911bafbb3a6c32c062ee2"
+  }
+}

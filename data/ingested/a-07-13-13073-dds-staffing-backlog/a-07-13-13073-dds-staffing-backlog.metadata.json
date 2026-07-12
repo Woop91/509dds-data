@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:56.791405+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\a-07-13-13073-dds-staffing-backlog\\a-07-13-13073-dds-staffing-backlog.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\a-07-13-13073-dds-staffing-backlog\\a-07-13-13073-dds-staffing-backlog.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "a-07-13-13073-dds-staffing-backlog",
+    "title": "A 07 13 13073 dds staffing backlog"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\a-07-13-13073-dds-staffing-backlog\\A-07-13-13073-dds-staffing-backlog.pdf",
+    "bytes": 351008,
+    "filename": "A-07-13-13073-dds-staffing-backlog.pdf",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\research\\oig\\A-07-13-13073-dds-staffing-backlog.pdf",
+    "sha256": "a698ed82f5ee7066fad987d20d45172c0a450c5efc0633c8fbd8ca56e6d11fc8"
+  }
+}

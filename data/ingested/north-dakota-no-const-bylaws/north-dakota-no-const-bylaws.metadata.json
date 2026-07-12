@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:28.384929+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\north-dakota-no-const-bylaws\\north-dakota-no-const-bylaws.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\north-dakota-no-const-bylaws\\north-dakota-no-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "north-dakota-no-const-bylaws",
+    "title": "North Dakota No Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\north-dakota-no-const-bylaws\\North-Dakota-No-Const-Bylaws.docx",
+    "bytes": 11450,
+    "filename": "North-Dakota-No-Const-Bylaws.docx",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\North-Dakota-No-Const-Bylaws.docx",
+    "sha256": "1a781e7b4e3a92d8cdcbc40179f305e9205af923866bb6ded90e3287f19a6690"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:46.253793+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\north-carolina-const-bylaws\\north-carolina-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "North-Carolina-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\north-carolina-const-bylaws\\north-carolina-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "north-carolina-const-bylaws",
+    "title": "North Carolina Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\north-carolina-const-bylaws\\North-Carolina-Const-Bylaws.doc",
+    "bytes": 80896,
+    "filename": "North-Carolina-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\North-Carolina-Const-Bylaws.doc",
+    "sha256": "904bb526f6519139fd473ef936b90434e354a20cea94d266b22af96e28097a24"
+  }
+}

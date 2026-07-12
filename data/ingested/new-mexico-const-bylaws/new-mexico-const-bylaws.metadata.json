@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:44.247485+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\new-mexico-const-bylaws\\new-mexico-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "New-Mexico-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\new-mexico-const-bylaws\\new-mexico-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "new-mexico-const-bylaws",
+    "title": "New Mexico Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\new-mexico-const-bylaws\\New-Mexico-Const-Bylaws.doc",
+    "bytes": 60928,
+    "filename": "New-Mexico-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\New-Mexico-Const-Bylaws.doc",
+    "sha256": "7e2df123b1c19fc8470dc7d0f12d51ed7e546fbc5e4fc1d5d85fdc7d02df8551"
+  }
+}

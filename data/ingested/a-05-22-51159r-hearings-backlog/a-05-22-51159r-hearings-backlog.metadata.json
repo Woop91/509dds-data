@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:54.546126+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\a-05-22-51159r-hearings-backlog\\a-05-22-51159r-hearings-backlog.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\a-05-22-51159r-hearings-backlog\\a-05-22-51159r-hearings-backlog.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "a-05-22-51159r-hearings-backlog",
+    "title": "A 05 22 51159r hearings backlog"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\a-05-22-51159r-hearings-backlog\\A-05-22-51159r-hearings-backlog.pdf",
+    "bytes": 970697,
+    "filename": "A-05-22-51159r-hearings-backlog.pdf",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\research\\oig\\A-05-22-51159r-hearings-backlog.pdf",
+    "sha256": "b641d91df388dce692c34f0f82956c76734ac3be07e6ef514cb622b80bc287bc"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:55.848650+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\iowa-const-bylaws\\iowa-const-bylaws.md",
+    "ocr": {
+      "markdown_via": "ocr-sidecar",
+      "ocrmypdf": "17.5.0",
+      "preconversion": ".doc->pdf via libreoffice",
+      "searchable_pdf": "iowa-const-bylaws.ocr.pdf",
+      "tesseract": "5.5.0",
+      "tool": "ocrmypdf+tesseract"
+    },
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Iowa-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\iowa-const-bylaws\\iowa-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "iowa-const-bylaws",
+    "title": "Iowa Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\iowa-const-bylaws\\Iowa-Const-Bylaws.doc",
+    "bytes": 1737216,
+    "filename": "Iowa-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Iowa-Const-Bylaws.doc",
+    "sha256": "b6f6913ab5a88cdac2abd38a58660ac589f5957f95187d9fa3ad5e5654c8c064"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:01.912257+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\oregon-const-bylaws\\oregon-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Oregon-const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\oregon-const-bylaws\\oregon-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "oregon-const-bylaws",
+    "title": "Oregon const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\oregon-const-bylaws\\Oregon-const-Bylaws.doc",
+    "bytes": 43520,
+    "filename": "Oregon-const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Oregon-const-Bylaws.doc",
+    "sha256": "c916d49c1be5fd0b9c7d25d463c82a271f5420ed0f9714f4276652e85f6167ee"
+  }
+}

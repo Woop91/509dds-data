@@ -1,0 +1,12 @@
+# Repo-local Semgrep config.
+#
+# Registry packs are referenced from .github/workflows/security.yml via the CLI
+# --config flag. This file is reserved for:
+#   1. Repo-specific custom rules (none currently)
+#   2. Inline allowlists for accepted findings (use # nosemgrep: <rule-id> reason
+#      at the call site instead - keeps justification close to the code)
+#
+# To add a custom rule, add an object to the rules: list with id, message,
+# severity (ERROR/WARNING/INFO), languages, and pattern. See:
+# https://semgrep.dev/docs/writing-rules/overview/
+rules: []

@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:36.973310+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\delaware-const-bylaws\\delaware-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Delaware-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\delaware-const-bylaws\\delaware-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "delaware-const-bylaws",
+    "title": "Delaware Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\delaware-const-bylaws\\Delaware-Const-Bylaws.doc",
+    "bytes": 40448,
+    "filename": "Delaware-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Delaware-Const-Bylaws.doc",
+    "sha256": "be0bf2cdf3636a365c93eb03255ffc7c46024790cb15b30d4cc453f8705ee90e"
+  }
+}

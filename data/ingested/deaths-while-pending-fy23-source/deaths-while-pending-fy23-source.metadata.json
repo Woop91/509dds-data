@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:04.042956+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\deaths-while-pending-fy23-source\\deaths-while-pending-fy23-source.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\deaths-while-pending-fy23-source\\deaths-while-pending-fy23-source.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "deaths-while-pending-fy23-source",
+    "title": "Deaths while pending fy23"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\deaths-while-pending-fy23-source\\deaths-while-pending-fy23.source.pdf",
+    "bytes": 117771,
+    "filename": "deaths-while-pending-fy23.source.pdf",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ssa\\oho\\deaths-while-pending-fy23.source.pdf",
+    "sha256": "5681a6a39d8ffd901e06b022f3146ac1c840839d29e394b89030beec8bc691eb"
+  }
+}

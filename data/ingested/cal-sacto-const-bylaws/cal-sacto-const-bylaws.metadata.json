@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:31.577048+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\cal-sacto-const-bylaws\\cal-sacto-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Cal-Sacto-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\cal-sacto-const-bylaws\\cal-sacto-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "cal-sacto-const-bylaws",
+    "title": "Cal Sacto Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\cal-sacto-const-bylaws\\Cal-Sacto-Const-Bylaws.doc",
+    "bytes": 53760,
+    "filename": "Cal-Sacto-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Cal-Sacto-Const-Bylaws.doc",
+    "sha256": "515a992fb9741ade77b6401c2e176073cc4b5b3204dc0d56ef4afb3dab02f705"
+  }
+}

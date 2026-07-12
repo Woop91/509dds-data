@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:38.666851+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\nebraska-const-bylaws\\nebraska-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Nebraska-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\nebraska-const-bylaws\\nebraska-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "nebraska-const-bylaws",
+    "title": "Nebraska Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\nebraska-const-bylaws\\Nebraska-Const-Bylaws.doc",
+    "bytes": 41984,
+    "filename": "Nebraska-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Nebraska-Const-Bylaws.doc",
+    "sha256": "6c72c018e1bb474e75928fcd906c84f20b4fc759f33d356e9fb5128aeac2abb9"
+  }
+}

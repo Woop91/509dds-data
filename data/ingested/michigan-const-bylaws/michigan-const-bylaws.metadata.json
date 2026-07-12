@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:13.187232+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\michigan-const-bylaws\\michigan-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Michigan-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\michigan-const-bylaws\\michigan-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "michigan-const-bylaws",
+    "title": "Michigan Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\michigan-const-bylaws\\Michigan-Const-Bylaws.doc",
+    "bytes": 49152,
+    "filename": "Michigan-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Michigan-Const-Bylaws.doc",
+    "sha256": "b046125c72b19aa14fde00557f1b1978d81618f0d5a41ac23dbbd51870bb4b5d"
+  }
+}

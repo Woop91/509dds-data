@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:57.805972+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\kentuck-frankfort-const-bylaws\\kentuck-frankfort-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Kentuck-Frankfort-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\kentuck-frankfort-const-bylaws\\kentuck-frankfort-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "kentuck-frankfort-const-bylaws",
+    "title": "Kentuck Frankfort Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\kentuck-frankfort-const-bylaws\\Kentuck-Frankfort-Const-Bylaws.doc",
+    "bytes": 44032,
+    "filename": "Kentuck-Frankfort-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Kentuck-Frankfort-Const-Bylaws.doc",
+    "sha256": "f905c469a7dacf94d2100aa927b56ead08aefedb63292a76224b4ff56daf6caf"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:32.930376+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\nade-awards-criteria-2025\\nade-awards-criteria-2025.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\nade-awards-criteria-2025\\nade-awards-criteria-2025.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "nade-awards-criteria-2025",
+    "title": "Nade awards criteria 2025"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\nade-awards-criteria-2025\\nade-awards-criteria-2025.pdf",
+    "bytes": 170964,
+    "filename": "nade-awards-criteria-2025.pdf",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\docs\\nade-awards-criteria-2025.pdf",
+    "sha256": "b6fd8b466dd6aa0c4250997e3dcee2ccd3342f2a0288ee040ca3476382a583f3"
+  }
+}

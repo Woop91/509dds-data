@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:46:48.959641+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\alabama-const-bylaws\\alabama-const-bylaws.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\alabama-const-bylaws\\alabama-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "alabama-const-bylaws",
+    "title": "NADE Alabama Constitution and Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\alabama-const-bylaws\\Alabama-Const-Bylaws.docx",
+    "bytes": 13345,
+    "filename": "Alabama-Const-Bylaws.docx",
+    "original_path": "C:\\Users\\deskc\\AppData\\Local\\Temp\\docx-intermediate\\Alabama-Const-Bylaws.docx",
+    "sha256": "7c11ac95f579813e9add13ef17dbcfc5fc705f033d33214779c5c9751fd55238"
+  }
+}

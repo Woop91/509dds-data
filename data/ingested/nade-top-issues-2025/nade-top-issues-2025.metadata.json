@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:36.388771+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\nade-top-issues-2025\\nade-top-issues-2025.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\nade-top-issues-2025\\nade-top-issues-2025.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "nade-top-issues-2025",
+    "title": "Nade top issues 2025"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\nade-top-issues-2025\\nade-top-issues-2025.pdf",
+    "bytes": 56081,
+    "filename": "nade-top-issues-2025.pdf",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\docs\\nade-top-issues-2025.pdf",
+    "sha256": "0bad05af3339f28c4640ae8b5e820927fe9344ce8bda483e2bdb7e63771b17e8"
+  }
+}

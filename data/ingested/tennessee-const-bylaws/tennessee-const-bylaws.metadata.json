@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:44:53.234325+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\tennessee-const-bylaws\\tennessee-const-bylaws.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\tennessee-const-bylaws\\tennessee-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "tennessee-const-bylaws",
+    "title": "NADE Tennessee Constitution and Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\tennessee-const-bylaws\\Tennessee-Const-Bylaws.docx",
+    "bytes": 28998,
+    "filename": "Tennessee-Const-Bylaws.docx",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Tennessee-Const-Bylaws.docx",
+    "sha256": "a699ae6a63c014ee8a9c81d751e0b9f5ac3240e8ab785379f03f701f4c162b91"
+  }
+}

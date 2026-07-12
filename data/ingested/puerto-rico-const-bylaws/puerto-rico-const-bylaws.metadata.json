@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:03.882111+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\puerto-rico-const-bylaws\\puerto-rico-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Puerto-Rico-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\puerto-rico-const-bylaws\\puerto-rico-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "puerto-rico-const-bylaws",
+    "title": "Puerto Rico Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\puerto-rico-const-bylaws\\Puerto-Rico-Const-Bylaws.doc",
+    "bytes": 64512,
+    "filename": "Puerto-Rico-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Puerto-Rico-Const-Bylaws.doc",
+    "sha256": "a63ff52d3373c5f684a86b8d124020a2a14942d46b2c49171f0eeab9994ad7e6"
+  }
+}

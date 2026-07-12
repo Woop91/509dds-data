@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:34.931543+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\missouri-const-bylaws\\missouri-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Missouri-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\missouri-const-bylaws\\missouri-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "missouri-const-bylaws",
+    "title": "Missouri Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\missouri-const-bylaws\\Missouri-Const-Bylaws.doc",
+    "bytes": 40448,
+    "filename": "Missouri-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Missouri-Const-Bylaws.doc",
+    "sha256": "e65e24d07327e74266dfbc0723099e81bd955fd499057facf17dad7908a78e12"
+  }
+}

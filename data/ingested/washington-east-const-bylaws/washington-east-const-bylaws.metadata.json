@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:18.985254+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\washington-east-const-bylaws\\washington-east-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Washington-East-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\washington-east-const-bylaws\\washington-east-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "washington-east-const-bylaws",
+    "title": "Washington East Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\washington-east-const-bylaws\\Washington-East-Const-Bylaws.doc",
+    "bytes": 47616,
+    "filename": "Washington-East-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Washington-East-Const-Bylaws.doc",
+    "sha256": "20e764757abe2fdec1feb4080cea2bb7d8dbf8726153ba7493529e891e09b96d"
+  }
+}

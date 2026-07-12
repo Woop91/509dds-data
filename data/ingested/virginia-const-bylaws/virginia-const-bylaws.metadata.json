@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:15.484219+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\virginia-const-bylaws\\virginia-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Virginia-Const-ByLaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\virginia-const-bylaws\\virginia-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "virginia-const-bylaws",
+    "title": "Virginia Const ByLaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\virginia-const-bylaws\\Virginia-Const-ByLaws.doc",
+    "bytes": 62464,
+    "filename": "Virginia-Const-ByLaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Virginia-Const-ByLaws.doc",
+    "sha256": "9094c8968081ddab121013805fec8f8d92d541c48e67bf09f748d5ac70502a05"
+  }
+}

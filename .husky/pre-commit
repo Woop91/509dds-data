@@ -1,0 +1,25 @@
+#!/usr/bin/env sh
+# Pre-commit gates for 509dds-data.
+# Currently: gitleaks staged-only scan (via Docker for cross-platform install-free).
+# Bypass for emergencies: git commit --no-verify (then file a rotation runbook entry)
+
+set -e
+
+# Resolve project dir to a path Docker on Windows accepts.
+# Git Bash on Windows converts /repo to a host path; cygpath -m gives us a
+# C:/Users/... style absolute path Docker recognizes, and MSYS_NO_PATHCONV=1
+# prevents conversion of the container-side /repo argument.
+PROJ_DIR="$(pwd)"
+if [ -n "$MSYSTEM" ] && command -v cygpath >/dev/null 2>&1; then
+  PROJ_DIR="$(cygpath -m "$PROJ_DIR")"
+  export MSYS_NO_PATHCONV=1
+fi
+
+echo "→ gitleaks (staged)"
+docker run --rm -v "${PROJ_DIR}:/repo" zricethezav/gitleaks:v8.21.2 \
+  protect --staged --no-banner \
+  --source=/repo \
+  --config=/repo/.gitleaks.toml \
+  --baseline-path=/repo/.security/gitleaks-baseline.json
+
+echo "✓ pre-commit checks passed"

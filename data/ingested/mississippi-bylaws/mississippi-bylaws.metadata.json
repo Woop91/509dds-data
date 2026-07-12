@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:33.157426+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\mississippi-bylaws\\mississippi-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Mississippi-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\mississippi-bylaws\\mississippi-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "mississippi-bylaws",
+    "title": "Mississippi Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\mississippi-bylaws\\Mississippi-Bylaws.doc",
+    "bytes": 43008,
+    "filename": "Mississippi-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Mississippi-Bylaws.doc",
+    "sha256": "d02d2df097212ce2265dcc9df3bdb57254621053ebc93867f21569da3fe18559"
+  }
+}

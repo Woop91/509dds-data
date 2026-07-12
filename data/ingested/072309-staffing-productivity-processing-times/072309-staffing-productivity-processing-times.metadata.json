@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:47.632429+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\072309-staffing-productivity-processing-times\\072309-staffing-productivity-processing-times.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\072309-staffing-productivity-processing-times\\072309-staffing-productivity-processing-times.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "072309-staffing-productivity-processing-times",
+    "title": "072309 staffing productivity processing times"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\072309-staffing-productivity-processing-times\\072309-staffing-productivity-processing-times.pdf",
+    "bytes": 806797,
+    "filename": "072309-staffing-productivity-processing-times.pdf",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\research\\oig\\072309-staffing-productivity-processing-times.pdf",
+    "sha256": "701c0ad6f0f6d401cf239f02196c6591b66be4fd995e4720f87eb1bff28ffc8c"
+  }
+}

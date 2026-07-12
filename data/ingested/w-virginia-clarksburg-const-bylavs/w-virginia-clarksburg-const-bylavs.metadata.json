@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:17.237493+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\w-virginia-clarksburg-const-bylavs\\w-virginia-clarksburg-const-bylavs.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "W.-Virginia-Clarksburg-Const-Bylavs.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\w-virginia-clarksburg-const-bylavs\\w-virginia-clarksburg-const-bylavs.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "w-virginia-clarksburg-const-bylavs",
+    "title": "W. Virginia Clarksburg Const Bylavs"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\w-virginia-clarksburg-const-bylavs\\W.-Virginia-Clarksburg-Const-Bylavs.doc",
+    "bytes": 42496,
+    "filename": "W.-Virginia-Clarksburg-Const-Bylavs.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\W.-Virginia-Clarksburg-Const-Bylavs.doc",
+    "sha256": "a7531a94470f497970d965dbb6b9c4bf39963de194251e50660805f8c26bac4f"
+  }
+}

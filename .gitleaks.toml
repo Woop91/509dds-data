@@ -1,0 +1,42 @@
+# Gitleaks config: extends the default rules from gitleaks itself and adds
+# repo-scoped allowlists for known-safe patterns (test fixtures, example
+# env files, etc.). Every allowlist entry MUST include a # why: comment.
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Repo-wide accepted patterns"
+
+# Path globs that should never be scanned. Use regex; gitleaks anchors at start.
+paths = [
+  # Test fixtures with deliberately fake credentials
+  '''(^|/)e2e/fixtures/.*''',
+  '''(^|/)test/fixtures/.*''',
+  # Example env files (committed for onboarding)
+  '''\.env\.example$''',
+  '''\.env\.sample$''',
+  # Docs with intentional examples
+  '''docs/security/.*\.md$''',
+  '''docs/examples/.*''',
+  # 509dds-data: firecrawl scratch outputs contain raw API responses with tokens
+  '''\.firecrawl/.*''',
+  '''\.firecrawl-scratch-[0-9-]+/.*''',
+  # Search result JSON dumps
+  '''search-.*\.json''',
+  '''gao-urls-found\.txt''',
+  # Scraped third-party HTML/JSON — these are pages WE DON'T CONTROL, downloaded
+  # for reference. Any "secrets" inside are public tokens (e.g. reCAPTCHA
+  # site_keys, public frontend API keys) embedded in the source site's HTML.
+  # why: third-party scraped content, not application code
+  '''(^|/)data/external/.*''',
+]
+
+# Specific commit SHAs to ignore (use only after triage - never blanket).
+# Format: full 40-char SHA + reason in a sibling [[allowlist.commits]] item.
+commits = []
+
+# Regex allowlists for false-positive patterns. Empty by default; add per-repo.
+# Example:
+#   regexes = ['''AKIA[0-9A-Z]{16}-EXAMPLE''']
+regexes = []

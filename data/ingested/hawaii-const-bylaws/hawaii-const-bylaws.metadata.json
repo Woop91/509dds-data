@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:45.968692+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\hawaii-const-bylaws\\hawaii-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Hawaii-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\hawaii-const-bylaws\\hawaii-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "hawaii-const-bylaws",
+    "title": "Hawaii Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\hawaii-const-bylaws\\Hawaii-Const-Bylaws.doc",
+    "bytes": 51200,
+    "filename": "Hawaii-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Hawaii-Const-Bylaws.doc",
+    "sha256": "eb0a5957b685eb79ae75ec18589c45969321ee7ed0da69828e71e2b1bd42dfee"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:05.504277+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\customer-service-factsheet-2024-10-source\\customer-service-factsheet-2024-10-source.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\customer-service-factsheet-2024-10-source\\customer-service-factsheet-2024-10-source.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "customer-service-factsheet-2024-10-source",
+    "title": "Customer service factsheet 2024 10"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\customer-service-factsheet-2024-10-source\\customer-service-factsheet-2024-10.source.pdf",
+    "bytes": 476078,
+    "filename": "customer-service-factsheet-2024-10.source.pdf",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ssa\\performance\\customer-service-factsheet-2024-10.source.pdf",
+    "sha256": "1acce5e6e54e3d4fc0184b11103bb85171c805e94a3331d4ccf03d41a94ffd9c"
+  }
+}

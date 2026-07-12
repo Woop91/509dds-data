@@ -23,6 +23,16 @@ Open data, source documents, and analysis for **SEIU Local 509's Disability Dete
 | [`docs/`](docs/) | Methodology, data dictionary, agency disambiguation, peer-state comparison |
 | [`prr-templates/`](prr-templates/) | Public Records Request templates for filling remaining gaps |
 
+## Document ingestion
+
+Use the MarkItDown wrapper before turning PDFs, Office files, or other source documents into parsed data. It writes an auditable bundle containing the original file, generated Markdown, metadata, checksum, and converter warnings.
+
+```bash
+npm run ingest:markitdown -- data/source/example.pdf --title "Example Source"
+```
+
+See [`docs/markitdown-ingestion.md`](docs/markitdown-ingestion.md).
+
 ## Headline findings
 
 - **VDE headcount: −44%** from 2019 (232) to 2023 (129) per CTHRU payroll — substantiates "unprecedented staffing vacancies" cited in MA's 2025 Annual Report
@@ -83,3 +93,39 @@ Repo content (READMEs, analysis, JSON extracts, PRR templates) — © SEIU Local
 
 - 509 DDS Chapter contact: see project memory
 - Repo issues / data updates: file a GitHub issue or PR
+
+## Security Tooling
+
+This repo runs three security scanners:
+
+- **Semgrep** (SAST) — CI only, on push + PR. Tiered gating: ERROR severity blocks merge, WARNING/INFO are advisory.
+- **Gitleaks** (secrets) — pre-commit hook (staged-only) + CI. Any finding blocks.
+- **Supabase Database Advisors** — N/A (this repo has no database).
+
+### Bypassing for emergencies
+
+```bash
+git commit --no-verify  # skip gitleaks pre-commit (only when justified)
+```
+
+CI bypass requires an allowlist commit with a `# why:` comment in `.gitleaks.toml` or `.semgrepignore`.
+
+### Adding an allowlist entry
+
+- Semgrep: add path or rule-id to `.semgrepignore` with a `# why:` comment.
+- Gitleaks: add path glob to `.gitleaks.toml` `[allowlist].paths`, or commit SHA to `[[allowlist.commits]]`.
+
+### Secret rotation
+
+If gitleaks fired in CI (or a real secret slipped past pre-commit), follow `docs/security/SECRET-ROTATION-RUNBOOK.md` in order.
+
+### Local scans
+
+Both scanners run via Docker (no global install needed):
+
+```bash
+npm run security:scan:gitleaks  # one-shot gitleaks detect
+npm run security:scan:semgrep   # one-shot semgrep scan
+```
+
+Pre-commit hook fires gitleaks automatically on `git commit`.

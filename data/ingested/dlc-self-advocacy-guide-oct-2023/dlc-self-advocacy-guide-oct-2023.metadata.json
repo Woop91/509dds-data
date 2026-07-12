@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:08.394430+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\dlc-self-advocacy-guide-oct-2023\\dlc-self-advocacy-guide-oct-2023.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\dlc-self-advocacy-guide-oct-2023\\dlc-self-advocacy-guide-oct-2023.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "dlc-self-advocacy-guide-oct-2023",
+    "title": "Dlc self advocacy guide oct 2023"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\dlc-self-advocacy-guide-oct-2023\\dlc-self-advocacy-guide-oct-2023.pdf",
+    "bytes": 257227,
+    "filename": "dlc-self-advocacy-guide-oct-2023.pdf",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ra-process\\dlc-self-advocacy-guide-oct-2023.pdf",
+    "sha256": "4239d4b591ed86c449ebe5822bb64811198794363bd779282fd02d2d2fa3e267"
+  }
+}

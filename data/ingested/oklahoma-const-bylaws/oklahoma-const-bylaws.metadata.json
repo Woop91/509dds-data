@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:58.211752+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\oklahoma-const-bylaws\\oklahoma-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Oklahoma-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\oklahoma-const-bylaws\\oklahoma-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "oklahoma-const-bylaws",
+    "title": "Oklahoma Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\oklahoma-const-bylaws\\Oklahoma-Const-Bylaws.doc",
+    "bytes": 53248,
+    "filename": "Oklahoma-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Oklahoma-Const-Bylaws.doc",
+    "sha256": "cfb6a71ebbc17421282e4ce33f0d0c0ad5654bb9268c9d0a311e6fbed4de6fea"
+  }
+}

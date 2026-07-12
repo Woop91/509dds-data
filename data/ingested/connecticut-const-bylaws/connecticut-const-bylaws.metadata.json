@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:27.372179+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\connecticut-const-bylaws\\connecticut-const-bylaws.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\connecticut-const-bylaws\\connecticut-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "connecticut-const-bylaws",
+    "title": "Connecticut Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\connecticut-const-bylaws\\Connecticut-Const-Bylaws.docx",
+    "bytes": 15193,
+    "filename": "Connecticut-Const-Bylaws.docx",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Connecticut-Const-Bylaws.docx",
+    "sha256": "802830ea8faa01b95e27dd1fc368b3670c52e141e8ae919955c07fa8dde71249"
+  }
+}

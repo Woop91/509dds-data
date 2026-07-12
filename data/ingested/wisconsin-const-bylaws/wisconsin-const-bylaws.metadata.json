@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:24.340954+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\wisconsin-const-bylaws\\wisconsin-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Wisconsin-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\wisconsin-const-bylaws\\wisconsin-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "wisconsin-const-bylaws",
+    "title": "Wisconsin Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\wisconsin-const-bylaws\\Wisconsin-Const-Bylaws.doc",
+    "bytes": 57856,
+    "filename": "Wisconsin-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Wisconsin-Const-Bylaws.doc",
+    "sha256": "f0227afae7cbc5651dd89ba5b926661ad3c3aa87c96fabbe6a9df316b5affdb9"
+  }
+}

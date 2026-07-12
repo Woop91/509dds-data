@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:02.848945+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\ai9370-01-source\\ai9370-01-source.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\ai9370-01-source\\ai9370-01-source.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "ai9370-01-source",
+    "title": "AI9370 01"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\ai9370-01-source\\AI9370-01.source.pdf",
+    "bytes": 83653,
+    "filename": "AI9370-01.source.pdf",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ssa\\foia\\AI9370-01.source.pdf",
+    "sha256": "7a293814fb4ef8895e3ee8675fd95f89f7a6ab2f93b4fdcd6b3a8cf296da141e"
+  }
+}

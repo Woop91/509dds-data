@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:05.388298+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\louisiana-shr-const-bylaws\\louisiana-shr-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "louisiana-Shr-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\louisiana-shr-const-bylaws\\louisiana-shr-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "louisiana-shr-const-bylaws",
+    "title": "Louisiana Shr Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\louisiana-shr-const-bylaws\\louisiana-Shr-Const-Bylaws.doc",
+    "bytes": 53248,
+    "filename": "louisiana-Shr-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\louisiana-Shr-Const-Bylaws.doc",
+    "sha256": "91cc878da34ee45b0f0121b4d341b2866b6a97efe3cdc852e4ab287b1b0184a2"
+  }
+}

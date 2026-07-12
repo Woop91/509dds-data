@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:54.278033+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\ny-west-const-bylaws\\ny-west-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "NY-West-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\ny-west-const-bylaws\\ny-west-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "ny-west-const-bylaws",
+    "title": "NY West Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\ny-west-const-bylaws\\NY-West-Const-Bylaws.doc",
+    "bytes": 64000,
+    "filename": "NY-West-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\NY-West-Const-Bylaws.doc",
+    "sha256": "5c23af8a80af2d233cec1b5fb5f2881e8aaeb0ce9143003a33931aadc5270924"
+  }
+}

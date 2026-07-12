@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:26.272419+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\cal-south-const-bylaws\\cal-south-const-bylaws.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\cal-south-const-bylaws\\cal-south-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "cal-south-const-bylaws",
+    "title": "Cal South Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\cal-south-const-bylaws\\Cal-South-Const-Bylaws.docx",
+    "bytes": 19706,
+    "filename": "Cal-South-Const-Bylaws.docx",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Cal-South-Const-Bylaws.docx",
+    "sha256": "cc1b1591de32e94f71a78fda70a5a872ba7c9bf71c4e3d14c00af2a01f810632"
+  }
+}

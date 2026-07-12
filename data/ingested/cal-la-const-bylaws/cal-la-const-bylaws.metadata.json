@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:29.702975+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\cal-la-const-bylaws\\cal-la-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Cal-LA-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\cal-la-const-bylaws\\cal-la-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "cal-la-const-bylaws",
+    "title": "Cal LA Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\cal-la-const-bylaws\\Cal-LA-Const-Bylaws.doc",
+    "bytes": 47616,
+    "filename": "Cal-LA-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Cal-LA-Const-Bylaws.doc",
+    "sha256": "2ca5fd9b90afd6f511bbcc691255e617e8f0915e24931b9de8da1aea0910637b"
+  }
+}

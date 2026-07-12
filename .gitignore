@@ -26,3 +26,5 @@ Thumbs.db
 # Python bytecode
 __pycache__/
 *.pyc
+
+# (node_modules/ for the security pre-commit hook host is already ignored above)

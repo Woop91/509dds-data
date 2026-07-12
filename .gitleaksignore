@@ -1,0 +1,4 @@
+# gitleaks fingerprint allowlist - one fingerprint per line.
+# Generate from a scan with: gitleaks detect --report-format=json | jq '.[].Fingerprint'
+# Each line: file:rule:line. Append # why: <reason> after the fingerprint when
+# you accept a real finding as known/triaged.

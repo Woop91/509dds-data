@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:41.118459+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\operational-approach-eliminating-backlogs-ssdi\\operational-approach-eliminating-backlogs-ssdi.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\operational-approach-eliminating-backlogs-ssdi\\operational-approach-eliminating-backlogs-ssdi.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "operational-approach-eliminating-backlogs-ssdi",
+    "title": "Operational approach eliminating backlogs ssdi"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\operational-approach-eliminating-backlogs-ssdi\\operational-approach-eliminating-backlogs-ssdi.pdf",
+    "bytes": 5884579,
+    "filename": "operational-approach-eliminating-backlogs-ssdi.pdf",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\research\\crfb\\operational-approach-eliminating-backlogs-ssdi.pdf",
+    "sha256": "7bcd1c4c32f662ebdac3ac05ccb2620fcfc736ff1c12af07e669be624ff5fd39"
+  }
+}

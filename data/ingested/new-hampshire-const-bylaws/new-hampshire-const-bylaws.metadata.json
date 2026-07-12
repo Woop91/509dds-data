@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:40.580450+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\new-hampshire-const-bylaws\\new-hampshire-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "New-Hampshire-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\new-hampshire-const-bylaws\\new-hampshire-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "new-hampshire-const-bylaws",
+    "title": "New Hampshire Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\new-hampshire-const-bylaws\\New-Hampshire-Const-Bylaws.doc",
+    "bytes": 65536,
+    "filename": "New-Hampshire-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\New-Hampshire-Const-Bylaws.doc",
+    "sha256": "7213e18dbe6a83cf03584dd45a3273eb577363e1d317c4090f708b928e4b2968"
+  }
+}

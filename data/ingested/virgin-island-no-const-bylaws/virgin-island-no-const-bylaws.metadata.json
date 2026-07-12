@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:13.681841+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\virgin-island-no-const-bylaws\\virgin-island-no-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Virgin-Island-No-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\virgin-island-no-const-bylaws\\virgin-island-no-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "virgin-island-no-const-bylaws",
+    "title": "Virgin Island No Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\virgin-island-no-const-bylaws\\Virgin-Island-No-Const-Bylaws.doc",
+    "bytes": 26112,
+    "filename": "Virgin-Island-No-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Virgin-Island-No-Const-Bylaws.doc",
+    "sha256": "da992686fe1f5692eb7911bd90a24fc0ab6f4937ed4164e4940cd4739283bf02"
+  }
+}

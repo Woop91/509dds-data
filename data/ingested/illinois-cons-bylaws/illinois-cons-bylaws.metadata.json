@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:51.619678+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\illinois-cons-bylaws\\illinois-cons-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Illinois-Cons-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\illinois-cons-bylaws\\illinois-cons-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "illinois-cons-bylaws",
+    "title": "Illinois Cons Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\illinois-cons-bylaws\\Illinois-Cons-Bylaws.doc",
+    "bytes": 96768,
+    "filename": "Illinois-Cons-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Illinois-Cons-Bylaws.doc",
+    "sha256": "9a4d9d2beab5974acfb93e040b4e40945df50cf3e4387c64650ec77478409c06"
+  }
+}

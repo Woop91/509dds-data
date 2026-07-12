@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:56.216311+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\ohio-const-bylaws\\ohio-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Ohio-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\ohio-const-bylaws\\ohio-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "ohio-const-bylaws",
+    "title": "Ohio Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\ohio-const-bylaws\\Ohio-Const-Bylaws.doc",
+    "bytes": 54272,
+    "filename": "Ohio-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Ohio-Const-Bylaws.doc",
+    "sha256": "058dc330bd4a509a5c141a1926a6decdfaefccfc2f6ceb9a0b26ab4244cd6fab"
+  }
+}

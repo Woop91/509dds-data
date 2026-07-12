@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:59.712732+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\kentuck-louisville-const-bylaws\\kentuck-louisville-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Kentuck-Louisville-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\kentuck-louisville-const-bylaws\\kentuck-louisville-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "kentuck-louisville-const-bylaws",
+    "title": "Kentuck Louisville Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\kentuck-louisville-const-bylaws\\Kentuck-Louisville-Const-Bylaws.doc",
+    "bytes": 54272,
+    "filename": "Kentuck-Louisville-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Kentuck-Louisville-Const-Bylaws.doc",
+    "sha256": "04e6fdae8b3dd646d21da3c6da765470f2f990a6972b4cee923ba60cc7c30008"
+  }
+}

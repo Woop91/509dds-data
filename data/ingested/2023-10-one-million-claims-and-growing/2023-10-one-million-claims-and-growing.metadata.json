@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:50.210600+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\2023-10-one-million-claims-and-growing\\2023-10-one-million-claims-and-growing.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\2023-10-one-million-claims-and-growing\\2023-10-one-million-claims-and-growing.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "2023-10-one-million-claims-and-growing",
+    "title": "2023 10 one million claims and growing"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\2023-10-one-million-claims-and-growing\\2023-10-one-million-claims-and-growing.pdf",
+    "bytes": 166640,
+    "filename": "2023-10-one-million-claims-and-growing.pdf",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\research\\oig\\2023-10-one-million-claims-and-growing.pdf",
+    "sha256": "30657379f2b9d86750c182a00905b0b71942030d70be2f422804af673283574d"
+  }
+}

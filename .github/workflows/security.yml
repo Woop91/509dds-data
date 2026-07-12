@@ -1,0 +1,107 @@
+name: Security
+
+on:
+  pull_request:
+    branches: [main, master]
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write  # for sticky PR comment on MED/LOW findings
+  security-events: write  # for SARIF upload (optional)
+
+concurrency:
+  group: security-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  semgrep:
+    name: Semgrep SAST
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # Guard fork PRs from running code with runner access (matches 509dds SEC-R21-004)
+    if: >
+      github.event_name == 'push' ||
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'pull_request' &&
+       github.event.pull_request.head.repo.full_name == github.repository)
+    container:
+      image: semgrep/semgrep:1.91.0  # PINNED - bump intentionally; never use :latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2 (matches 509dds SEC-R21-001)
+        with:
+          fetch-depth: 0  # baseline diff needs full history
+
+      - name: Semgrep scan
+        # PER-REPO: adjust --config list to match repo's stack pack (see plan Phase docs)
+        # GitHub context interpolated via env (not run:) to satisfy
+        # yaml.github-actions.security.run-shell-injection - github.base_ref
+        # could theoretically contain shell metacharacters from a fork PR.
+        env:
+          BASE_REF: ${{ github.base_ref || github.ref_name }}
+        run: |
+          semgrep scan \
+            --config=p/security-audit \
+            --config=p/owasp-top-ten \
+            --config=p/secrets \
+            --config=p/javascript \
+            --config=p/python \
+            --config=.semgrep.yml \
+            --baseline-commit="$(git merge-base "origin/$BASE_REF" HEAD)" \
+            --json \
+            --output=semgrep-results.json \
+            --error || echo "::notice::Semgrep exited with findings - see tier check"
+
+      - name: Tier check (block on ERROR severity, warn on WARNING/INFO)
+        run: |
+          if [ ! -s semgrep-results.json ]; then
+            echo "No semgrep results file - assuming clean."
+            exit 0
+          fi
+          ERROR_COUNT=$(jq '[.results[] | select(.extra.severity == "ERROR")] | length' semgrep-results.json)
+          WARN_COUNT=$(jq '[.results[] | select(.extra.severity == "WARNING")] | length' semgrep-results.json)
+          INFO_COUNT=$(jq '[.results[] | select(.extra.severity == "INFO")] | length' semgrep-results.json)
+          echo "Findings: ERROR=$ERROR_COUNT WARNING=$WARN_COUNT INFO=$INFO_COUNT"
+          if [ "$ERROR_COUNT" -gt 0 ]; then
+            echo "::error::$ERROR_COUNT CRITICAL/HIGH severity Semgrep finding(s) - PR blocked"
+            jq -r '.results[] | select(.extra.severity == "ERROR") | "\(.path):\(.start.line) [\(.check_id)] \(.extra.message)"' semgrep-results.json
+            exit 1
+          fi
+          if [ "$WARN_COUNT" -gt 0 ] || [ "$INFO_COUNT" -gt 0 ]; then
+            echo "::warning::$WARN_COUNT MED + $INFO_COUNT LOW findings - see artifact, not blocking"
+          fi
+
+      - name: Upload Semgrep report
+        uses: actions/upload-artifact@6f51ac03b9356f520e9adb1b1b7802705f340c2b  # v4.5.0
+        if: always()
+        with:
+          name: semgrep-results
+          path: semgrep-results.json
+          retention-days: 14
+
+  gitleaks:
+    name: Gitleaks Secrets Scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    if: >
+      github.event_name == 'push' ||
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'pull_request' &&
+       github.event.pull_request.head.repo.full_name == github.repository)
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
+        with:
+          fetch-depth: 0  # gitleaks needs full history for accurate diff
+
+      - name: Gitleaks scan
+        # gitleaks/gitleaks-action - SHA must be looked up at impl time; see plan note
+        # Command: gh api repos/gitleaks/gitleaks-action/git/refs/tags/v2.3.7 -q .object.sha
+        uses: gitleaks/gitleaks-action@ff98106e4c7b2bc287b24eaf42907196329070c7  # v2.3.9 - VERIFY at impl time
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_CONFIG: .gitleaks.toml
+          GITLEAKS_ENABLE_UPLOAD_ARTIFACT: "true"
+          GITLEAKS_ENABLE_COMMENTS: "true"
+          GITLEAKS_ENABLE_SUMMARY: "true"

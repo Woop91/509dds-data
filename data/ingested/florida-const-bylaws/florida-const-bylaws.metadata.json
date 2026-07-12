@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:38.839664+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\florida-const-bylaws\\florida-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "FLorida-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\florida-const-bylaws\\florida-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "florida-const-bylaws",
+    "title": "FLorida Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\florida-const-bylaws\\FLorida-Const-Bylaws.doc",
+    "bytes": 61952,
+    "filename": "FLorida-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\FLorida-Const-Bylaws.doc",
+    "sha256": "ceb43c3b06ec38bfe62854bc29a41183579dfbff1d2f6d55d5de6a0573906c30"
+  }
+}

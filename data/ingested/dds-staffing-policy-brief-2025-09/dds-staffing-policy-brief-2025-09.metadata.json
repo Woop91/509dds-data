@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:44:55.092410+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\dds-staffing-policy-brief-2025-09\\dds-staffing-policy-brief-2025-09.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\dds-staffing-policy-brief-2025-09\\dds-staffing-policy-brief-2025-09.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "dds-staffing-policy-brief-2025-09",
+    "title": "SSAB DDS Staffing Policy Brief 2025-09"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\dds-staffing-policy-brief-2025-09\\dds-staffing-policy-brief-2025-09.pdf",
+    "bytes": 331561,
+    "filename": "dds-staffing-policy-brief-2025-09.pdf",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\research\\ssab\\dds-staffing-policy-brief-2025-09.pdf",
+    "sha256": "0f227649cc13801ceb757a77b3635ab8ad5b00dda82a117ff3055e4e8700b14e"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:29.450173+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\pennsylvania-const-bylaws\\pennsylvania-const-bylaws.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\pennsylvania-const-bylaws\\pennsylvania-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "pennsylvania-const-bylaws",
+    "title": "Pennsylvania Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\pennsylvania-const-bylaws\\Pennsylvania-Const-Bylaws.docx",
+    "bytes": 17309,
+    "filename": "Pennsylvania-Const-Bylaws.docx",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Pennsylvania-Const-Bylaws.docx",
+    "sha256": "8b1097e9b0682b975d39b92b7bc264772445ced1cf51b0839b2d04546e739286"
+  }
+}

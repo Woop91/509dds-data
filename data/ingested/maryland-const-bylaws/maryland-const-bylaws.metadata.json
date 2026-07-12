@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:09.379999+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\maryland-const-bylaws\\maryland-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Maryland-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\maryland-const-bylaws\\maryland-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "maryland-const-bylaws",
+    "title": "Maryland Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\maryland-const-bylaws\\Maryland-Const-Bylaws.doc",
+    "bytes": 47104,
+    "filename": "Maryland-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Maryland-Const-Bylaws.doc",
+    "sha256": "e42ea88f7112b9c7764b3438e3c11f023c14804fe1b3f00550692d59c543ce0d"
+  }
+}

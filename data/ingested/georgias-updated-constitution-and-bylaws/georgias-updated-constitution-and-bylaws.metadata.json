@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:40.718755+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\georgias-updated-constitution-and-bylaws\\georgias-updated-constitution-and-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Georgias-updated-constitution-and-bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\georgias-updated-constitution-and-bylaws\\georgias-updated-constitution-and-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "georgias-updated-constitution-and-bylaws",
+    "title": "Georgias updated constitution and bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\georgias-updated-constitution-and-bylaws\\Georgias-updated-constitution-and-bylaws.doc",
+    "bytes": 63488,
+    "filename": "Georgias-updated-constitution-and-bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Georgias-updated-constitution-and-bylaws.doc",
+    "sha256": "d72e726905741d2c0580204647fddf5ca5c3db51e354998910178f8592d60807"
+  }
+}

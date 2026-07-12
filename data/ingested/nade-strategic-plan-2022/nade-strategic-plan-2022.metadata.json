@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:35.151791+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\nade-strategic-plan-2022\\nade-strategic-plan-2022.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\nade-strategic-plan-2022\\nade-strategic-plan-2022.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "nade-strategic-plan-2022",
+    "title": "Nade strategic plan 2022"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\nade-strategic-plan-2022\\nade-strategic-plan-2022.docx",
+    "bytes": 33884,
+    "filename": "nade-strategic-plan-2022.docx",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\docs\\nade-strategic-plan-2022.docx",
+    "sha256": "9aa49fa698fb4b715975893e97fc39b41720e9b8d38d022ccd3516b0a44887e5"
+  }
+}

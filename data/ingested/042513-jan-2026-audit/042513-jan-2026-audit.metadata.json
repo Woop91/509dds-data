@@ -1,0 +1,24 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:50:44.872790+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\042513-jan-2026-audit\\042513-jan-2026-audit.md",
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\042513-jan-2026-audit\\042513-jan-2026-audit.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "042513-jan-2026-audit",
+    "title": "042513 jan 2026 audit"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\042513-jan-2026-audit\\042513-jan-2026-audit.pdf",
+    "bytes": 437893,
+    "filename": "042513-jan-2026-audit.pdf",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\research\\oig\\042513-jan-2026-audit.pdf",
+    "sha256": "2e22c90553a7f0dcc2e073af50bb6392ee86843491764ac1953ab7e7215977bd"
+  }
+}

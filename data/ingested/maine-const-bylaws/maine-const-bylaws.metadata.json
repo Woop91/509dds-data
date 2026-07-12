@@ -1,0 +1,30 @@
+{
+  "conversion": {
+    "command": [
+      "markitdown"
+    ],
+    "converted_at": "2026-05-29T02:51:07.389190+00:00",
+    "exit_code": 0,
+    "markdown_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\maine-const-bylaws\\maine-const-bylaws.md",
+    "preconversion": {
+      "from": ".doc",
+      "intermediate": "Maine-Const-Bylaws.docx",
+      "to": ".docx",
+      "tool": "libreoffice"
+    },
+    "tool": "markitdown",
+    "warnings_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\maine-const-bylaws\\maine-const-bylaws.warnings.txt"
+  },
+  "document": {
+    "review_status": "needs-review",
+    "slug": "maine-const-bylaws",
+    "title": "Maine Const Bylaws"
+  },
+  "source": {
+    "archived_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\ingested\\maine-const-bylaws\\Maine-Const-Bylaws.doc",
+    "bytes": 50176,
+    "filename": "Maine-Const-Bylaws.doc",
+    "original_path": "C:\\Users\\deskc\\Documents\\509dds-data\\data\\external\\nade\\state-bylaws\\Maine-Const-Bylaws.doc",
+    "sha256": "e52a39f1027b4cf4edd0e7ae12cec24c26ee2fc1d397aca30be671b8bb53a437"
+  }
+}
