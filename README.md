@@ -60,13 +60,13 @@ Most sources are static (annual reports, CBAs). The auto-updating sources:
 
 | Dataset | Update cadence | Source URL |
 |---|---|---|
-| `ssa-sa-fywl-all-states-2001-2024.csv` | Annual, ~Nov | https://www.ssa.gov/disability/data/SSA-SA-FYWL.csv |
-| `dds-net-accuracy-by-state-2007-2022.csv` | Annual | https://www.ssa.gov/data/DDS-Net-Accuracy.csv |
-| `cdp-time-monthly-fy16-fy26.csv` | Monthly | https://www.ssa.gov/data/fy16-onwards-CDP-Time-Monthly.csv |
+| `ssa-sa-fywl-all-states-2001-2024.csv` | Annual, ~Nov (`refresh-ssa-data.yml`) | https://www.ssa.gov/disability/data/SSA-SA-FYWL.csv |
+| `dds-net-accuracy-by-state-2007-2022.csv` | Annual (`refresh-ssa-data.yml`) | https://www.ssa.gov/data/DDS-Net-Accuracy.csv |
+| `cdp-time-monthly-fy16-fy26.csv` | Monthly, auto-fetched on the 15th (`refresh-ssa-data.yml`) | https://www.ssa.gov/data/fy16-onwards-CDP-Time-Monthly.csv |
 | `cdp-time-monthly-fy08-fy15.csv` | Static (historical) | https://www.ssa.gov/data/Combined-Disability-Processing-Time.csv |
 | `periodic-cdr-fy13-fy22.csv` | Annual (last update 2023-05-22) | https://www.ssa.gov/data/Periodic-Continuing-Disability-Reviews.csv |
 | `periodic-cdr-backlog-fy14-fy18.csv` | Static (frozen 2018) | https://www.ssa.gov/data/Periodic-CDR-Case-Backlog.csv |
-| CTHRU payroll | Quarterly (CY+12mo lag) | https://cthru.data.socrata.com/resource/rxhc-k6iz.json?$where=chris='MRC' |
+| `cthru-staffing/cthru-vde-annual-summary.json` | Quarterly, CY+12mo lag (`refresh-cthru.yml`) | https://cthru.data.socrata.com/resource/rxhc-k6iz.json?$where=chris='MRC' |
 | `cpi-u-us-city-average-annual.csv` | Annual (~Jan) | https://data.bls.gov/timeseries/CUUR0000SA0 |
 | `cpi-u-boston-cambridge-newton-annual.csv` | Semiannual (annual avg ~Jan) | https://data.bls.gov/timeseries/CUURS11ASA0 |
 | `rpp-by-state-2008-2024.csv` | Annual (~Dec) | https://apps.bea.gov/regional/zip/SARPP.zip |

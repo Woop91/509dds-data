@@ -1,0 +1,107 @@
+name: Refresh CTHRU staffing data
+
+# Fetches a VDE headcount-by-year summary from the MA Comptroller CTHRU
+# Socrata API (dataset rxhc-k6iz) and saves it as a raw JSON file.
+#
+# CTHRU has a ~12-month lag: CY 2024 data typically appears mid-2025.
+# Running quarterly catches new years as soon as they land without hammering
+# the API. The raw summary is committed so maintainers can see when a new
+# calendar year appears and manually update vde-headcount-by-grade-and-year.json.
+#
+# Filter: chris='MRC' (MassAbility) + position titles matching VDE roles.
+# See docs/dds-det-vs-dds-dev.md for disambiguation and the verified SoQL pattern.
+
+on:
+  schedule:
+    # 12:00 UTC on the 1st of January, April, July, October
+    - cron: '0 12 1 1,4,7,10 *'
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manual refresh (optional)'
+        required: false
+        default: 'manual refresh'
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-cthru:
+    name: Quarterly CTHRU VDE headcount summary
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Fetch CTHRU VDE annual summary
+        run: |
+          set -e
+          mkdir -p data/cthru-staffing
+
+          # SoQL: count payroll records per year for VDE-titled roles within MRC (MassAbility).
+          # Verified against known data: 3,028 examiner-titled records across all years, 100% MRC.
+          url='https://cthru.data.socrata.com/resource/rxhc-k6iz.json?$select=year,count(*)%20as%20record_count&$where=chris=%27MRC%27%20AND%20upper(position_title)%20like%20%27%25DISAB%20EXAMINER%25%27&$group=year&$order=year&$limit=50'
+
+          echo "Fetching CTHRU VDE summary..."
+          http_code=$(curl -sL -w "%{http_code}" \
+            -H "Accept: application/json" \
+            -o data/cthru-staffing/cthru-vde-annual-summary.json \
+            --max-time 60 \
+            "$url" || echo "000")
+
+          if [ "$http_code" != "200" ]; then
+            echo "::error::CTHRU API returned HTTP $http_code"
+            exit 1
+          fi
+
+          # Sanity check — response should be a JSON array
+          if ! python3 -c "import json,sys; d=json.load(open('data/cthru-staffing/cthru-vde-annual-summary.json')); assert isinstance(d,list) and len(d)>0"; then
+            echo "::error::Response is not a non-empty JSON array — possible API error"
+            cat data/cthru-staffing/cthru-vde-annual-summary.json
+            exit 1
+          fi
+
+          years=$(python3 -c "import json; d=json.load(open('data/cthru-staffing/cthru-vde-annual-summary.json')); print([r['year'] for r in d])")
+          echo "Years in response: $years"
+
+      - name: Commit if changed
+        run: |
+          set -e
+          if [ -z "$(git status --porcelain data/cthru-staffing/cthru-vde-annual-summary.json)" ]; then
+            echo "No changes — CTHRU VDE summary unchanged."
+            exit 0
+          fi
+
+          # Check whether a new calendar year has appeared vs the previous commit
+          new_years=$(python3 - <<'EOF'
+          import json, subprocess, sys
+
+          current = json.load(open('data/cthru-staffing/cthru-vde-annual-summary.json'))
+          current_years = {r['year'] for r in current}
+
+          try:
+              prev_raw = subprocess.check_output(
+                  ['git', 'show', 'HEAD:data/cthru-staffing/cthru-vde-annual-summary.json'],
+                  stderr=subprocess.DEVNULL
+              )
+              prev = json.loads(prev_raw)
+              prev_years = {r['year'] for r in prev}
+          except Exception:
+              prev_years = set()
+
+          added = sorted(current_years - prev_years)
+          if added:
+              print(f"NEW CALENDAR YEARS: {', '.join(added)}")
+          else:
+              print("counts updated, no new years")
+          EOF
+          )
+          echo "$new_years"
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/cthru-staffing/cthru-vde-annual-summary.json
+          git commit -m "data: refresh CTHRU VDE headcount summary (auto, $(date -u +%Y-%m-%d)) — $new_years"
+          git push

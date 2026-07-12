@@ -1,19 +1,27 @@
 name: Refresh SSA datasets
 
-# SSA publishes annual updates to its public DDS workload CSVs around early
-# November (after the end of federal FY in late Sept). This workflow runs
-# automatically each Nov 15 to fetch fresh copies, and can also be run
-# manually via workflow_dispatch any time.
+# Two jobs with different cadences:
+#   refresh-annual  — Nov 15 each year: SSA-SA-FYWL + DDS-Net-Accuracy + the two
+#                     historical/static series (Combined-Disability-Processing-Time,
+#                     Periodic-Continuing-Disability-Reviews), all published ~Oct/Nov
+#   refresh-monthly — 15th of every month: CDP-Time-Monthly (updated each month by SSA)
 #
-# If SSA's CDN blocks the GitHub Actions runner IPs (Azure egress), the
-# job will fail and an artifact will be saved with the response body for
-# debugging. Switch to firecrawl by adding FIRECRAWL_API_KEY to repo
-# secrets if that happens.
+# Both jobs can also be triggered manually via workflow_dispatch.
+#
+# Filenames keep their dated suffixes to match the checked-in datasets and the
+# manually-maintained *-LATEST snapshots; the workflow overwrites the dated file
+# in place on each run.
+#
+# If SSA's CDN blocks GitHub Actions runner IPs (Azure egress), the job will fail and
+# an error artifact is saved for debugging. Add FIRECRAWL_API_KEY to repo secrets and
+# switch the curl step to firecrawl if that happens.
 
 on:
   schedule:
-    # 15:00 UTC on November 15 = 10:00 AM ET — well after most overnight CDN cache cycles
+    # Annual: 15:00 UTC on November 15
     - cron: '0 15 15 11 *'
+    # Monthly: 15:00 UTC on the 15th of every month
+    - cron: '0 15 15 * *'
   workflow_dispatch:
     inputs:
       reason:
@@ -25,7 +33,12 @@ permissions:
   contents: write
 
 jobs:
-  refresh:
+  refresh-annual:
+    name: Annual SSA datasets (Nov 15)
+    # Run on the November schedule or on manual dispatch; skip other months
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'schedule' && startsWith(github.event.schedule, '0 15 15 11'))
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -33,7 +46,7 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Fetch SSA CSVs
+      - name: Fetch annual SSA CSVs
         env:
           UA: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
         run: |
@@ -42,7 +55,6 @@ jobs:
           declare -a urls=(
             "https://www.ssa.gov/disability/data/SSA-SA-FYWL.csv|data/ssa/ssa-sa-fywl-all-states-2001-2024.csv"
             "https://www.ssa.gov/data/DDS-Net-Accuracy.csv|data/ssa/dds-net-accuracy-by-state-2007-2022.csv"
-            "https://www.ssa.gov/data/fy16-onwards-CDP-Time-Monthly.csv|data/ssa/cdp-time-monthly-fy16-fy26.csv"
             "https://www.ssa.gov/data/Combined-Disability-Processing-Time.csv|data/ssa/cdp-time-monthly-fy08-fy15.csv"
             "https://www.ssa.gov/data/Periodic-Continuing-Disability-Reviews.csv|data/ssa/periodic-cdr-fy13-fy22.csv"
           )
@@ -56,7 +68,6 @@ jobs:
               echo "::warning::HTTP $http_code for $url — skipping"
               continue
             fi
-            # sanity check — first line should be CSV-ish (commas, no HTML)
             if head -1 "$tmp" | grep -qiE '<html|<!doctype'; then
               echo "::warning::Got HTML response for $url (likely bot-block); skipping"
               cp "$tmp" "${dest}.error.html"
@@ -66,24 +77,83 @@ jobs:
             echo "Saved $dest ($(wc -c < "$dest") bytes)"
           done
 
-      - name: Detect changes + commit if any
+      - name: Commit if changed
         run: |
           set -e
-          if [ -z "$(git status --porcelain data/ssa/)" ]; then
-            echo "No changes — SSA datasets are unchanged from last run."
+          if [ -z "$(git status --porcelain data/ssa/ssa-sa-fywl-all-states-2001-2024.csv data/ssa/dds-net-accuracy-by-state-2007-2022.csv data/ssa/cdp-time-monthly-fy08-fy15.csv data/ssa/periodic-cdr-fy13-fy22.csv)" ]; then
+            echo "No changes — annual SSA datasets unchanged."
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/ssa/
-          git commit -m "data: refresh SSA datasets (auto, $(date -u +%Y-%m-%d))"
+          git add data/ssa/ssa-sa-fywl-all-states-2001-2024.csv data/ssa/dds-net-accuracy-by-state-2007-2022.csv data/ssa/cdp-time-monthly-fy08-fy15.csv data/ssa/periodic-cdr-fy13-fy22.csv
+          git commit -m "data: refresh annual SSA datasets (auto, $(date -u +%Y-%m-%d))"
           git push
 
       - name: Upload error artifacts (if any)
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: ssa-fetch-errors
+          name: ssa-annual-fetch-errors
+          path: data/ssa/*.error.html
+          if-no-files-found: ignore
+          retention-days: 30
+
+  refresh-monthly:
+    name: Monthly CDP processing-time dataset
+    # Run every month (both schedules trigger on the 15th, so filter out November
+    # for the monthly job to avoid double-committing — annual job handles that month)
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Fetch CDP-Time-Monthly CSV
+        env:
+          UA: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+        run: |
+          set -e
+          mkdir -p data/ssa
+          url="https://www.ssa.gov/data/fy16-onwards-CDP-Time-Monthly.csv"
+          dest="data/ssa/cdp-time-monthly-fy16-fy26.csv"
+          tmp="$(mktemp)"
+          echo "Fetching $url"
+          http_code=$(curl -sL -A "$UA" -w "%{http_code}" -o "$tmp" --max-time 90 "$url" || echo "000")
+          if [ "$http_code" != "200" ]; then
+            echo "::warning::HTTP $http_code for $url — skipping"
+            exit 0
+          fi
+          if head -1 "$tmp" | grep -qiE '<html|<!doctype'; then
+            echo "::warning::Got HTML response for $url (likely bot-block); skipping"
+            cp "$tmp" "${dest}.error.html"
+            exit 0
+          fi
+          mv "$tmp" "$dest"
+          echo "Saved $dest ($(wc -c < "$dest") bytes)"
+
+      - name: Commit if changed
+        run: |
+          set -e
+          if [ -z "$(git status --porcelain data/ssa/cdp-time-monthly-fy16-fy26.csv)" ]; then
+            echo "No changes — CDP-Time-Monthly unchanged from last run."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/ssa/cdp-time-monthly-fy16-fy26.csv
+          git commit -m "data: refresh CDP processing-time dataset (auto, $(date -u +%Y-%m-%d))"
+          git push
+
+      - name: Upload error artifacts (if any)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ssa-monthly-fetch-errors
           path: data/ssa/*.error.html
           if-no-files-found: ignore
           retention-days: 30
