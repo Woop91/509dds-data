@@ -28,6 +28,9 @@ REPO = Path(__file__).resolve().parents[1]
 SCHEMA_PATH = REPO / "schemas" / "dataset.meta.schema.json"
 CATALOG_PATH = REPO / "catalog.json"
 DATA_DIRS = ["data"]
+# MarkItDown ingestion bundles carry their own *.metadata.json provenance (not the
+# curated *.meta.json data-card schema), so they are not scanned as datasets.
+EXCLUDE_DIRS = ["data/ingested"]
 DATASET_EXTS = {".csv", ".json", ".xlsx"}
 CONFIDENCE = {
     "Authoritative",
@@ -56,6 +59,11 @@ def is_dataset_file(p: Path) -> bool:
     return True
 
 
+def is_excluded(p: Path) -> bool:
+    rel = p.relative_to(REPO).as_posix()
+    return any(rel == d or rel.startswith(f"{d}/") for d in EXCLUDE_DIRS)
+
+
 def find_datasets():
     out = []
     for d in DATA_DIRS:
@@ -63,7 +71,7 @@ def find_datasets():
         if not base.exists():
             continue
         for p in base.rglob("*"):
-            if p.is_file() and is_dataset_file(p):
+            if p.is_file() and not is_excluded(p) and is_dataset_file(p):
                 out.append(p)
     return sorted(out)
 

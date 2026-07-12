@@ -16,7 +16,7 @@ model BAAI/bge-small-en-v1.5) enables meaning-based retrieval with no API key �
 see `embeddings/README.md`. Query it with `python scripts/search.py "<query>"`.
 
 
-_289 datasets indexed._
+_286 datasets indexed._
 
 
 ## SSA datasets (data/ssa)
@@ -62,9 +62,6 @@ _289 datasets indexed._
 - [MassAbility Annual Report FY2024](data/ma-annual-reports/massability-fy24.md): Official MassAbility annual report for Massachusetts state fiscal year 2024 (July 1, 2023 – June 30, 2024) — the first annual report published under the MassAb… Authoritative.
 - [MassAbility Annual Report FY2025](data/ma-annual-reports/massability-fy25.md): Official MassAbility annual report for Massachusetts state fiscal year 2025 (July 1, 2024 – June 30, 2025), the first full fiscal year under the MassAbility na… Authoritative.
 - [Massachusetts Rehabilitation Commission (MRC) Annual Report FY2023](data/ma-annual-reports/mrc-fy23.md): Official annual report of the Massachusetts Rehabilitation Commission (MRC) for state fiscal year 2023 (July 1, 2022 – June 30, 2023), the last annual report p… Authoritative.
-- [MRC Statewide Rehabilitation Council (SRC) Annual Report FY2022](data/ma-annual-reports/src-fy22.md): Annual report of the Massachusetts Rehabilitation Commission Statewide Rehabilitation Council (SRC) for fiscal year 2022 (July 1, 2021 – June 30, 2022). Authoritative.
-- [MRC Statewide Rehabilitation Council (SRC) Annual Report FY2023](data/ma-annual-reports/src-fy23.md): Annual report of the Massachusetts Rehabilitation Commission Statewide Rehabilitation Council (SRC) for fiscal year 2023 (July 1, 2022 – June 30, 2023). Authoritative.
-- [SRC FY2024 (UNAVAILABLE — file is a mislabeled duplicate of the MassAbility FY24 report)](data/ma-annual-reports/src-fy24.md): The genuine State Rehabilitation Council FY2024 annual report is NOT present in this file. Structurally unavailable.
 
 ## Reasonable-accommodation process (data/ra-process)
 
