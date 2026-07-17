@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "sha": "0d2ffa6c8ada",
+      "status": "verified",
+      "worklistIds": [
+        "SYS-SECURITY-BASE-REF-20260716"
+      ],
+      "regressionEvidence": [
+        "tests/test_recovery_regressions.py"
+      ],
+      "systemRepair": "3c65f0e adds a regression gate requiring GitHub base_ref to enter shell commands only through the workflow environment",
+      "reviewedBy": "/root",
+      "reviewedAt": "2026-07-17T00:55:00Z"
+    },
+    {
+      "sha": "19b21bc0e400",
+      "status": "verified",
+      "worklistIds": [
+        "SYS-CATALOG-INTEGRITY-20260716"
+      ],
+      "regressionEvidence": [
+        "tests/test_recovery_regressions.py"
+      ],
+      "systemRepair": "3c65f0e adds a regression gate that excludes ingestion bundles and rejects dangling catalog metadata references",
+      "reviewedBy": "/root",
+      "reviewedAt": "2026-07-17T00:55:00Z"
+    }
+  ]
+}
