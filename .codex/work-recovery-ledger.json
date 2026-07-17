@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "entries": [
     {
-      "sha": "0d2ffa6c8ada",
+      "sha": "0d2ffa6c8ada314e4c7cd1a9310717142e7752c3",
       "status": "verified",
       "worklistIds": [
         "SYS-SECURITY-BASE-REF-20260716"
@@ -15,7 +15,7 @@
       "reviewedAt": "2026-07-17T00:55:00Z"
     },
     {
-      "sha": "19b21bc0e400",
+      "sha": "19b21bc0e400590673e5ceeb9737547cfb8f3ece",
       "status": "verified",
       "worklistIds": [
         "SYS-CATALOG-INTEGRITY-20260716"
