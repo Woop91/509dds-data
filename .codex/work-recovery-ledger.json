@@ -26,6 +26,123 @@
       "systemRepair": "3c65f0e adds a regression gate that excludes ingestion bundles and rejects dangling catalog metadata references",
       "reviewedBy": "/root",
       "reviewedAt": "2026-07-17T00:55:00Z"
+    },
+    {
+      "sha": "074b346b46835fe63cdaf75904dd0033ffca6dd8",
+      "status": "verified",
+      "worklistIds": ["DATA-REFRESH-AND-PEER-CHART-20260716"],
+      "regressionEvidence": ["tests/test_historical_archive_integrity.py"],
+      "systemRepair": "Bind stable SSA and CTHRU refresh schedules and output filenames to exact-SHA work ownership and behavior-specific regression assertions.",
+      "reviewedBy": "/root/review_dirty_packets",
+      "reviewedAt": "2026-07-17T05:45:00Z"
+    },
+    {
+      "sha": "9d2abb7086e83ae0d5b37fa921ff8a717c30900b",
+      "status": "verified",
+      "worklistIds": ["DATA-REFRESH-AND-PEER-CHART-20260716"],
+      "regressionEvidence": ["tests/test_historical_archive_integrity.py"],
+      "systemRepair": "Bind the ten-year Massachusetts peer chart periods, peer set, and state series to exact-SHA work ownership and regression assertions.",
+      "reviewedBy": "/root/review_dirty_packets",
+      "reviewedAt": "2026-07-17T05:45:00Z"
+    },
+    {
+      "sha": "35f6f0e34fdf8e6ca9988740e874334c6e3fe803",
+      "status": "verified",
+      "worklistIds": ["SYS-SECURITY-ARCHIVE-GATES-20260716"],
+      "regressionEvidence": ["tests/test_historical_archive_integrity.py", "tests/regression/SYS-DATA-SCANNER-RESANITIZE-20260717.test.ps1"],
+      "systemRepair": "Bind the staged security hook and scanner commands to exact-SHA work ownership plus executable whole-tree scanner coverage.",
+      "reviewedBy": "/root/review_dirty_packets",
+      "reviewedAt": "2026-07-17T05:45:00Z"
+    },
+    {
+      "sha": "20e221447f865bf3fa1845756d37b2507dbba750",
+      "status": "verified",
+      "worklistIds": ["SYS-SECURITY-ARCHIVE-GATES-20260716"],
+      "regressionEvidence": ["tests/test_historical_archive_integrity.py", "tests/test_recovery_regressions.py", "tests/regression/SYS-DATA-SCANNER-RESANITIZE-20260717.test.ps1"],
+      "systemRepair": "Bind Semgrep, Gitleaks, base-ref handling, and corrected whole-tree scanning to exact-SHA work ownership and regression coverage.",
+      "reviewedBy": "/root/review_dirty_packets",
+      "reviewedAt": "2026-07-17T05:45:00Z"
+    },
+    {
+      "sha": "49c60b31082b3cb51df2a7f9d1e385ade2932e84",
+      "status": "verified",
+      "worklistIds": ["DATA-MARKITDOWN-ARCHIVE-20260716"],
+      "regressionEvidence": ["tests/test_markitdown_bundle.py"],
+      "systemRepair": "Bind converter output, metadata, checksums, warnings, and overwrite protection to exact-SHA work ownership and focused tests.",
+      "reviewedBy": "/root/review_dirty_packets",
+      "reviewedAt": "2026-07-17T05:45:00Z"
+    },
+    {
+      "sha": "d10240a3d7ef776f2b4b19b0d6544ae3f94861ee",
+      "status": "verified",
+      "worklistIds": ["DATA-MARKITDOWN-ARCHIVE-20260716"],
+      "regressionEvidence": ["tests/test_markitdown_bundle.py", "tests/test_historical_archive_integrity.py"],
+      "systemRepair": "Bind all 78 ingestion bundles to exact-SHA ownership and require metadata, source hashes, checksums, and Markdown to remain present and parseable.",
+      "reviewedBy": "/root/review_dirty_packets",
+      "reviewedAt": "2026-07-17T05:45:00Z"
+    },
+    {
+      "sha": "8876af6042b2d07d0cc50e35bae3ba3e73a9c6fd",
+      "status": "verified",
+      "worklistIds": ["DATA-PRR-EVIDENCE-20260716"],
+      "regressionEvidence": ["tests/test_historical_archive_integrity.py"],
+      "systemRepair": "Bind the DDS COVID telework evidence and request templates to exact-SHA ownership and parseable evidence-chain assertions.",
+      "reviewedBy": "/root/review_dirty_packets",
+      "reviewedAt": "2026-07-17T05:45:00Z"
+    },
+    {
+      "sha": "4740456df07f7a6cfad8bb04de2bd5e14d4b731b",
+      "status": "verified",
+      "worklistIds": ["DATA-PRR-EVIDENCE-20260716"],
+      "regressionEvidence": ["tests/test_historical_archive_integrity.py"],
+      "systemRepair": "Bind MassAbility telework evidence and survey-request metadata to exact-SHA ownership and parseable evidence-chain assertions.",
+      "reviewedBy": "/root/review_dirty_packets",
+      "reviewedAt": "2026-07-17T05:45:00Z"
+    },
+    {
+      "sha": "fe2c8d04e19d1caac0eb0d72b03ac2d1c6d1c1ab",
+      "status": "verified",
+      "worklistIds": ["DATA-PRR-EVIDENCE-20260716"],
+      "regressionEvidence": ["tests/test_historical_archive_integrity.py"],
+      "systemRepair": "Bind the DDS source-chain documents, metadata, and supporting sources to exact-SHA ownership and parseable evidence-chain assertions.",
+      "reviewedBy": "/root/review_dirty_packets",
+      "reviewedAt": "2026-07-17T05:45:00Z"
+    },
+    {
+      "sha": "d5b11190f2160598ea3d062b4a96892b0a828cf0",
+      "status": "verified",
+      "worklistIds": ["DATA-PRR-EVIDENCE-20260716"],
+      "regressionEvidence": ["tests/test_historical_archive_integrity.py"],
+      "systemRepair": "Bind both split MassAbility request templates and their metadata to exact-SHA ownership and presence/parseability assertions.",
+      "reviewedBy": "/root/review_dirty_packets",
+      "reviewedAt": "2026-07-17T05:45:00Z"
+    },
+    {
+      "sha": "3c65f0ed8e47f2739fc8612750df668f6a92ec17",
+      "status": "verified",
+      "worklistIds": ["SYS-FLEET-RECOVERY-LEDGER-20260716"],
+      "regressionEvidence": ["tests/test_recovery_regressions.py"],
+      "systemRepair": "Bind the missed-defect regression gates themselves to exact-SHA work ownership so later fleet review cannot lose their origin.",
+      "reviewedBy": "/root/review_dirty_packets",
+      "reviewedAt": "2026-07-17T05:45:00Z"
+    },
+    {
+      "sha": "68d1eba80e54eed3f563a6eea4b3caf5c618a602",
+      "status": "verified",
+      "worklistIds": ["SYS-FLEET-RECOVERY-LEDGER-20260716"],
+      "regressionEvidence": ["tests/test_work_recovery_ledger.py"],
+      "systemRepair": "Bind the reviewed defect-evidence ledger update to its durable system work item and executable recovery-gate tests.",
+      "reviewedBy": "/root/review_dirty_packets",
+      "reviewedAt": "2026-07-17T05:45:00Z"
+    },
+    {
+      "sha": "3c8347e583b3e74716bc35c9c78a26f169dcf0d5",
+      "status": "verified",
+      "worklistIds": ["SYS-FLEET-RECOVERY-LEDGER-20260716"],
+      "regressionEvidence": ["tests/test_work_recovery_ledger.py"],
+      "systemRepair": "Bind the exact-defect-SHA correction to durable system ownership and the regression gates that fail on stale or missing recovery evidence.",
+      "reviewedBy": "/root/review_dirty_packets",
+      "reviewedAt": "2026-07-17T05:45:00Z"
     }
   ]
 }

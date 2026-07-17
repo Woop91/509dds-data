@@ -16,5 +16,9 @@ $markers = [regex]::Matches($text, "apiKey\s*:\s*'\[REMOVED_EXTERNAL_CLIENT_KEY\
 if ($markers.Count -ne 1) {
     throw "Expected exactly one external client-key removal marker."
 }
+$recaptchaMarkers = [regex]::Matches($text, "REMOVED_RECAPTCHA_SITE_KEY")
+if ($recaptchaMarkers.Count -ne 2) {
+    throw "Expected both reCAPTCHA site-key instances to be removed."
+}
 
 Write-Output "PASS: sanitized data tree and durable removal marker"

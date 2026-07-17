@@ -25,11 +25,6 @@ paths = [
   # Search result JSON dumps
   '''search-.*\.json''',
   '''gao-urls-found\.txt''',
-  # Scraped third-party HTML/JSON — these are pages WE DON'T CONTROL, downloaded
-  # for reference. Any "secrets" inside are public tokens (e.g. reCAPTCHA
-  # site_keys, public frontend API keys) embedded in the source site's HTML.
-  # why: third-party scraped content, not application code
-  '''(^|/)data/external/.*''',
 ]
 
 # Specific commit SHAs to ignore (use only after triage - never blanket).

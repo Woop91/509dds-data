@@ -2,3 +2,7 @@
 # Generate from a scan with: gitleaks detect --report-format=json | jq '.[].Fingerprint'
 # Each line: file:rule:line. Append # why: <reason> after the fingerprint when
 # you accept a real finding as known/triaged.
+# why: historical third-party client key removed from the maintained branch; published history is immutable
+b582b229b91039cd5cd82073c062d30b0fc8376a:data/external/kff/kff-disability-page.html:generic-api-key:346
+# why: historical public reCAPTCHA site key removed from the maintained branch; published history is immutable
+b582b229b91039cd5cd82073c062d30b0fc8376a:data/external/kff/kff-disability-page.html:generic-api-key:1459
